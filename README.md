@@ -7,4 +7,5 @@ Install instructions:
 4. Move `method1.met` into desired workspace methods folder
 
 Usage instructions:
-1. 
+1. cd PyLynx
+2. Run `py mm4_cmd.py`
