@@ -1,0 +1,3917 @@
+﻿<Complex name="Root" type="MethodManager.Data.Dto.MethodDto, MethodManager.Data">
+  <Properties>
+    <Simple name="Name" value="" />
+    <Collection name="Steps">
+      <Properties>
+        <Simple name="Capacity" value="32" />
+      </Properties>
+      <Items>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="05fb9ae8-0bef-44ae-939d-9bcda4238c84" />
+            <Simple name="CommandId" value="565c02ef-0d8e-40bd-8906-4cc50e02fcb7" />
+            <Simple name="CommandName" value="Begin Loop" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="VariableName" />
+                  <Simple type="System.String, mscorlib" value="end" />
+                </Item>
+                <Item>
+                  <Simple value="VariableValue" />
+                  <Simple type="System.String, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="VariableValueVariable" />
+                  <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="565c02ef-0d8e-40bd-8906-4cc50e02fcb7" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="05fb9ae8-0bef-44ae-939d-9bcda4238c84" />
+            <Simple name="CommandId" value="62f22693-1d98-4546-9661-35b35a3f246e" />
+            <Simple name="CommandName" value="Wait For Variable" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="_variableName" />
+                  <Simple type="System.String, mscorlib" value="new_command" />
+                </Item>
+                <Item>
+                  <Simple value="_operator" />
+                  <Simple type="System.String, mscorlib" value="Matches" />
+                </Item>
+                <Item>
+                  <Simple value="_compareWith" />
+                  <Simple type="System.String, mscorlib" value="1" />
+                </Item>
+                <Item>
+                  <Simple value="_compareWithVariable" />
+                  <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="_timeoutSec" />
+                  <Simple type="System.Int32, mscorlib" value="9000" />
+                </Item>
+                <Item>
+                  <Simple value="_timestampVariable" />
+                  <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="_errorOnTimeout" />
+                  <Simple type="System.Boolean, mscorlib" value="False" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="62f22693-1d98-4546-9661-35b35a3f246e" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="05fb9ae8-0bef-44ae-939d-9bcda4238c84" />
+            <Simple name="CommandId" value="e4119c3d-b767-4700-b7a3-968fa667c2fd" />
+            <Simple name="CommandName" value="If" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="VariableName" />
+                  <Simple type="System.String, mscorlib" value="cmd_name" />
+                </Item>
+                <Item>
+                  <Simple value="VariableValue" />
+                  <Simple type="System.String, mscorlib" value="cmd_load_tips" />
+                </Item>
+                <Item>
+                  <Simple value="Operator" />
+                  <Simple type="System.String, mscorlib" value="Matches" />
+                </Item>
+                <Item>
+                  <Simple value="UseValueVariable" />
+                  <Simple type="System.Boolean, mscorlib" value="False" />
+                </Item>
+                <Item>
+                  <Simple value="ValueVariable" />
+                  <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4700-b7a3-968fa667c2fd" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="2776287b-aaeb-4fcc-9481-c994542e4ade" />
+            <Simple name="CommandId" value="1d04aba5-dc42-e044-e57e-311ff530b30f" />
+            <Simple name="CommandName" value="Load Tips(VVP96)" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="loadZForceFraction" />
+                  <Simple type="System.Double, mscorlib" value="0.3" />
+                </Item>
+                <Item>
+                  <Simple value="plate" />
+                  <Simple type="System.String, mscorlib" value="tips_0" />
+                </Item>
+                <Item>
+                  <Simple value="plateVariable" />
+                  <Simple type="System.String, mscorlib" value="tip_box" />
+                </Item>
+                <Item>
+                  <Simple value="motionProfileName" />
+                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                </Item>
+                <Item>
+                  <Simple value="commandFlags" />
+                  <Simple type="System.UInt32, mscorlib" value="11" />
+                </Item>
+                <Item>
+                  <Simple value="commandFlagsSrc" />
+                  <Simple type="System.UInt32, mscorlib" value="15" />
+                </Item>
+                <Item>
+                  <Simple value="commandFlagsDst" />
+                  <Simple type="System.UInt32, mscorlib" value="15" />
+                </Item>
+                <Item>
+                  <Simple value="collisionAvoidanceDisabled" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="1d04aba5-dc42-e044-e57e-311ff530b30f" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="05fb9ae8-0bef-44ae-939d-9bcda4238c84" />
+            <Simple name="CommandId" value="b5c4e057-0ae6-4466-a5cf-a770d7ca736d" />
+            <Simple name="CommandName" value="End If" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="b5c4e057-0ae6-4466-a5cf-a770d7ca736d" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="05fb9ae8-0bef-44ae-939d-9bcda4238c84" />
+            <Simple name="CommandId" value="e4119c3d-b767-4700-b7a3-968fa667c2fd" />
+            <Simple name="CommandName" value="If" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="VariableName" />
+                  <Simple type="System.String, mscorlib" value="cmd_name" />
+                </Item>
+                <Item>
+                  <Simple value="VariableValue" />
+                  <Simple type="System.String, mscorlib" value="cmd_aspirate_vvp" />
+                </Item>
+                <Item>
+                  <Simple value="Operator" />
+                  <Simple type="System.String, mscorlib" value="Matches" />
+                </Item>
+                <Item>
+                  <Simple value="UseValueVariable" />
+                  <Simple type="System.Boolean, mscorlib" value="False" />
+                </Item>
+                <Item>
+                  <Simple value="ValueVariable" />
+                  <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4700-b7a3-968fa667c2fd" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="2776287b-aaeb-4fcc-9481-c994542e4ade" />
+            <Simple name="CommandId" value="453a73f0-be3e-0038-26c9-a717cfa4bcfb" />
+            <Simple name="CommandName" value="Aspirate(VVP96)" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="A01.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="A01.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A01.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A01.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="A01.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="B01.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="B01.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="B01.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="B01.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B01.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C01.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="C01.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="C01.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="C01.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C01.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D01.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="D01.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="D01.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="D01.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D01.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E01.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="E01.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="E01.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="E01.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E01.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F01.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="F01.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="F01.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="F01.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F01.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G01.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="G01.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="G01.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="G01.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G01.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H01.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="H01.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="H01.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="H01.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H01.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A02.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="A02.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="A02.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="A02.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A02.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B02.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="B02.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="B02.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="B02.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B02.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C02.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="C02.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="C02.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="C02.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C02.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D02.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="D02.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="D02.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="D02.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D02.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E02.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="E02.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="E02.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="E02.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E02.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F02.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="F02.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="F02.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="F02.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F02.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G02.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="G02.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="G02.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="G02.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G02.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H02.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="H02.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="H02.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="H02.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H02.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A03.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="A03.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="A03.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="A03.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A03.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B03.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="B03.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="B03.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="B03.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B03.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C03.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="C03.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="C03.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="C03.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C03.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D03.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="D03.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="D03.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="D03.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D03.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E03.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="E03.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="E03.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="E03.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E03.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F03.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="F03.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="F03.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="F03.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F03.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G03.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="G03.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="G03.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="G03.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G03.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H03.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="H03.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="H03.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="H03.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H03.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A04.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="A04.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="A04.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="A04.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A04.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B04.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="B04.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="B04.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="B04.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B04.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C04.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="C04.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="C04.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="C04.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C04.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D04.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="D04.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="D04.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="D04.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D04.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E04.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="E04.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="E04.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="E04.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E04.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F04.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="F04.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="F04.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="F04.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F04.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G04.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="G04.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="G04.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="G04.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G04.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H04.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="H04.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="H04.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="H04.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H04.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A05.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="A05.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="A05.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="A05.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A05.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B05.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="B05.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="B05.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="B05.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B05.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C05.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="C05.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="C05.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="C05.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C05.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D05.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="D05.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="D05.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="D05.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D05.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E05.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="E05.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="E05.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="E05.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E05.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F05.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="F05.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="F05.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="F05.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F05.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G05.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="G05.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="G05.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="G05.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G05.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H05.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="H05.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="H05.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="H05.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H05.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A06.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="A06.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="A06.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="A06.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A06.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B06.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="B06.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="B06.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="B06.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B06.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C06.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="C06.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="C06.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="C06.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C06.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D06.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="D06.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="D06.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="D06.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D06.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E06.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="E06.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="E06.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="E06.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E06.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F06.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="F06.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="F06.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="F06.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F06.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G06.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="G06.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="G06.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="G06.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G06.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H06.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="H06.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="H06.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="H06.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H06.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A07.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="A07.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="A07.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="A07.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A07.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B07.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="B07.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="B07.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="B07.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B07.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C07.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="C07.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="C07.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="C07.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C07.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D07.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="D07.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="D07.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="D07.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D07.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E07.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="E07.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="E07.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="E07.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E07.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F07.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="F07.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="F07.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="F07.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F07.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G07.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="G07.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="G07.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="G07.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G07.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H07.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="H07.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="H07.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="H07.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H07.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A08.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="A08.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="A08.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="A08.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A08.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B08.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="B08.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="B08.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="B08.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B08.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C08.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="C08.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="C08.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="C08.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C08.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D08.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="D08.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="D08.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="D08.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D08.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E08.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="E08.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="E08.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="E08.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E08.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F08.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="F08.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="F08.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="F08.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F08.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G08.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="G08.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="G08.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="G08.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G08.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H08.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="H08.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="H08.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="H08.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H08.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A09.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="A09.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="A09.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="A09.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A09.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B09.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="B09.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="B09.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="B09.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B09.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C09.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="C09.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="C09.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="C09.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C09.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D09.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="D09.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="D09.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="D09.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D09.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E09.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="E09.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="E09.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="E09.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E09.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F09.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="F09.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="F09.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="F09.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F09.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G09.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="G09.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="G09.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="G09.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G09.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H09.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="H09.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="H09.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="H09.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H09.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A10.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="A10.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="A10.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="A10.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A10.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B10.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="B10.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="B10.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="B10.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B10.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C10.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="C10.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="C10.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="C10.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C10.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D10.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="D10.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="D10.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="D10.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D10.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E10.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="E10.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="E10.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="E10.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E10.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F10.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="F10.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="F10.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="F10.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F10.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G10.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="G10.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="G10.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="G10.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G10.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H10.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="H10.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="H10.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="H10.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H10.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A11.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="A11.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="A11.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="A11.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A11.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B11.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="B11.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="B11.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="B11.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B11.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C11.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="C11.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="C11.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="C11.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C11.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D11.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="D11.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="D11.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="D11.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D11.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E11.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="E11.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="E11.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="E11.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E11.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F11.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="F11.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="F11.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="F11.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F11.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G11.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="G11.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="G11.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="G11.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G11.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H11.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="H11.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="H11.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="H11.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H11.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A12.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="A12.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="A12.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="A12.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A12.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B12.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="B12.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="B12.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="B12.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="B12.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C12.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="C12.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="C12.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="C12.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="C12.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D12.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="D12.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="D12.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="D12.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="D12.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E12.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="E12.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="E12.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="E12.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="E12.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F12.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="F12.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="F12.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="F12.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="F12.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G12.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="G12.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="G12.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="G12.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="G12.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H12.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="H12.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="H12.volume" />
+                  <Simple type="System.Double, mscorlib" value="20" />
+                </Item>
+                <Item>
+                  <Simple value="H12.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="H12.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="flowrateOrPressure" />
+                  <Simple type="System.String, mscorlib" value="Mid-Range Volumes" />
+                </Item>
+                <Item>
+                  <Simple value="flowrateOrPressure1" />
+                  <Simple type="System.String, mscorlib" value="Default" />
+                </Item>
+                <Item>
+                  <Simple value="inputDataType" />
+                  <Simple type="System.Int32, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="inputDataName" />
+                  <Simple type="System.String, mscorlib" value=",,;asp_data" />
+                </Item>
+                <Item>
+                  <Simple value="clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="multiVVPParametersTable" />
+                  <Simple type="System.String, mscorlib" value="100;Standard,200;Standard,300;Standard,400;Standard" />
+                </Item>
+                <Item>
+                  <Simple value="disposeTips" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="useTipBoxListFile" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="tipLoadForce" />
+                  <Simple type="System.Double, mscorlib" value="30" />
+                </Item>
+                <Item>
+                  <Simple value="tipEjectHeight" />
+                  <Simple type="System.Double, mscorlib" value="15" />
+                </Item>
+                <Item>
+                  <Simple value="aspirateHeight" />
+                  <Simple type="System.Double, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="dispenseHeight" />
+                  <Simple type="System.Double, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="preAspirateMixHeight" />
+                  <Simple type="System.Double, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="preAspirateMixCycles" />
+                  <Simple type="System.Int32, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="preAspirateMixVVPParamsAsp" />
+                  <Simple type="System.String, mscorlib" value="Default" />
+                </Item>
+                <Item>
+                  <Simple value="preAspirateMixVVPParamsDisp" />
+                  <Simple type="System.String, mscorlib" value="Default" />
+                </Item>
+                <Item>
+                  <Simple value="postDispenseMixHeight" />
+                  <Simple type="System.Double, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="postDispenseMixCycles" />
+                  <Simple type="System.Int32, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="postDispenseMixVVPParamsAsp" />
+                  <Simple type="System.String, mscorlib" value="Default" />
+                </Item>
+                <Item>
+                  <Simple value="postDispenseMixVVPParamsDisp" />
+                  <Simple type="System.String, mscorlib" value="Default" />
+                </Item>
+                <Item>
+                  <Simple value="remainingTransfersSuffix" />
+                  <Simple type="System.String, mscorlib" value="_remaining" />
+                </Item>
+                <Item>
+                  <Simple value="headerMapping" />
+                  <Simple type="System.String, mscorlib" value="Source_Plate,Source_Well,Destination_Plate,Destination_Well,Volume,TipLoad_Force_Percent,TipLoad_Height,TipEject_Height,Aspirate_Height,Dispense_Height,LeadAirgap,TrailAirgap,Blowout,Source_XOffset,Source_YOffset,Destination_XOffset,Destination_YOffset,Pre_Aspirate_Mix_Volume,Pre_Aspirate_Mix_Height,Pre_Aspirate_Mix_Blowout,Pre_Aspirate_Mix_Final_Blowout,Pre_Aspirate_Mix_Cycles,Post_Dispense_Mix_Volume,Post_Dispense_Mix_Height,Post_Dispense_Mix_Blowout,Post_Dispense_Mix_Final_Blowout,Post_Dispense_Mix_Cycles,Aspirate_LLT_Height,Aspirate_LLT_Time,Dispense_LLT_Height,Dispense_LLT_Time,Pre_Aspirate_Mix_LLT_Height,Pre_Aspirate_Mix_LLT_Time,Post_Dispense_Mix_LLT_Height,Post_Dispense_Mix_LLT_Time" />
+                </Item>
+                <Item>
+                  <Simple value="plate" />
+                  <Simple type="System.String, mscorlib" value="plate_0" />
+                </Item>
+                <Item>
+                  <Simple value="plateVariable" />
+                  <Simple type="System.String, mscorlib" value="asp_plate" />
+                </Item>
+                <Item>
+                  <Simple value="xOffsetVariable" />
+                  <Simple type="System.String, mscorlib" value="asp_offset_x" />
+                </Item>
+                <Item>
+                  <Simple value="yOffsetVariable" />
+                  <Simple type="System.String, mscorlib" value="asp_offset_y" />
+                </Item>
+                <Item>
+                  <Simple value="height" />
+                  <Simple type="System.Double, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="heightVariable" />
+                  <Simple type="System.String, mscorlib" value="asp_offset_z" />
+                </Item>
+                <Item>
+                  <Simple value="motionProfileName" />
+                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                </Item>
+                <Item>
+                  <Simple value="commandFlags" />
+                  <Simple type="System.UInt32, mscorlib" value="11" />
+                </Item>
+                <Item>
+                  <Simple value="commandFlagsSrc" />
+                  <Simple type="System.UInt32, mscorlib" value="15" />
+                </Item>
+                <Item>
+                  <Simple value="commandFlagsDst" />
+                  <Simple type="System.UInt32, mscorlib" value="15" />
+                </Item>
+                <Item>
+                  <Simple value="collisionAvoidanceDisabled" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="453a73f0-be3e-0038-26c9-a717cfa4bcfb" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="05fb9ae8-0bef-44ae-939d-9bcda4238c84" />
+            <Simple name="CommandId" value="b5c4e057-0ae6-4466-a5cf-a770d7ca736d" />
+            <Simple name="CommandName" value="End If" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="b5c4e057-0ae6-4466-a5cf-a770d7ca736d" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="05fb9ae8-0bef-44ae-939d-9bcda4238c84" />
+            <Simple name="CommandId" value="e4119c3d-b767-4700-b7a3-968fa667c2fd" />
+            <Simple name="CommandName" value="If" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="VariableName" />
+                  <Simple type="System.String, mscorlib" value="cmd_name" />
+                </Item>
+                <Item>
+                  <Simple value="VariableValue" />
+                  <Simple type="System.String, mscorlib" value="cmd_dispense_vvp" />
+                </Item>
+                <Item>
+                  <Simple value="Operator" />
+                  <Simple type="System.String, mscorlib" value="Matches" />
+                </Item>
+                <Item>
+                  <Simple value="UseValueVariable" />
+                  <Simple type="System.Boolean, mscorlib" value="False" />
+                </Item>
+                <Item>
+                  <Simple value="ValueVariable" />
+                  <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4700-b7a3-968fa667c2fd" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="2776287b-aaeb-4fcc-9481-c994542e4ade" />
+            <Simple name="CommandId" value="36d4aadc-134e-1706-4d47-6169e0b808cb" />
+            <Simple name="CommandName" value="Dispense(VVP96)" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="flowrateOrPressure" />
+                  <Simple type="System.String, mscorlib" value="Mid-Range Volumes" />
+                </Item>
+                <Item>
+                  <Simple value="flowrateOrPressure1" />
+                  <Simple type="System.String, mscorlib" value="Default" />
+                </Item>
+                <Item>
+                  <Simple value="inputDataType" />
+                  <Simple type="System.Int32, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="inputDataName" />
+                  <Simple type="System.String, mscorlib" value=",,;disp_data" />
+                </Item>
+                <Item>
+                  <Simple value="clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="multiVVPParametersTable" />
+                  <Simple type="System.String, mscorlib" value="100;Standard,200;Standard,300;Standard,400;Standard" />
+                </Item>
+                <Item>
+                  <Simple value="disposeTips" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="useTipBoxListFile" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="tipLoadForce" />
+                  <Simple type="System.Double, mscorlib" value="30" />
+                </Item>
+                <Item>
+                  <Simple value="tipEjectHeight" />
+                  <Simple type="System.Double, mscorlib" value="15" />
+                </Item>
+                <Item>
+                  <Simple value="aspirateHeight" />
+                  <Simple type="System.Double, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="dispenseHeight" />
+                  <Simple type="System.Double, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="preAspirateMixHeight" />
+                  <Simple type="System.Double, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="preAspirateMixCycles" />
+                  <Simple type="System.Int32, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="preAspirateMixVVPParamsAsp" />
+                  <Simple type="System.String, mscorlib" value="Default" />
+                </Item>
+                <Item>
+                  <Simple value="preAspirateMixVVPParamsDisp" />
+                  <Simple type="System.String, mscorlib" value="Default" />
+                </Item>
+                <Item>
+                  <Simple value="postDispenseMixHeight" />
+                  <Simple type="System.Double, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="postDispenseMixCycles" />
+                  <Simple type="System.Int32, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="postDispenseMixVVPParamsAsp" />
+                  <Simple type="System.String, mscorlib" value="Default" />
+                </Item>
+                <Item>
+                  <Simple value="postDispenseMixVVPParamsDisp" />
+                  <Simple type="System.String, mscorlib" value="Default" />
+                </Item>
+                <Item>
+                  <Simple value="remainingTransfersSuffix" />
+                  <Simple type="System.String, mscorlib" value="_remaining" />
+                </Item>
+                <Item>
+                  <Simple value="headerMapping" />
+                  <Simple type="System.String, mscorlib" value="Source_Plate,Source_Well,Destination_Plate,Destination_Well,Volume,TipLoad_Force_Percent,TipLoad_Height,TipEject_Height,Aspirate_Height,Dispense_Height,LeadAirgap,TrailAirgap,Blowout,Source_XOffset,Source_YOffset,Destination_XOffset,Destination_YOffset,Pre_Aspirate_Mix_Volume,Pre_Aspirate_Mix_Height,Pre_Aspirate_Mix_Blowout,Pre_Aspirate_Mix_Final_Blowout,Pre_Aspirate_Mix_Cycles,Post_Dispense_Mix_Volume,Post_Dispense_Mix_Height,Post_Dispense_Mix_Blowout,Post_Dispense_Mix_Final_Blowout,Post_Dispense_Mix_Cycles,Aspirate_LLT_Height,Aspirate_LLT_Time,Dispense_LLT_Height,Dispense_LLT_Time,Pre_Aspirate_Mix_LLT_Height,Pre_Aspirate_Mix_LLT_Time,Post_Dispense_Mix_LLT_Height,Post_Dispense_Mix_LLT_Time" />
+                </Item>
+                <Item>
+                  <Simple value="plate" />
+                  <Simple type="System.String, mscorlib" value="plate_0" />
+                </Item>
+                <Item>
+                  <Simple value="plateVariable" />
+                  <Simple type="System.String, mscorlib" value="disp_plate" />
+                </Item>
+                <Item>
+                  <Simple value="height" />
+                  <Simple type="System.Double, mscorlib" value="2" />
+                </Item>
+                <Item>
+                  <Simple value="motionProfileName" />
+                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                </Item>
+                <Item>
+                  <Simple value="commandFlags" />
+                  <Simple type="System.UInt32, mscorlib" value="11" />
+                </Item>
+                <Item>
+                  <Simple value="commandFlagsSrc" />
+                  <Simple type="System.UInt32, mscorlib" value="15" />
+                </Item>
+                <Item>
+                  <Simple value="commandFlagsDst" />
+                  <Simple type="System.UInt32, mscorlib" value="15" />
+                </Item>
+                <Item>
+                  <Simple value="collisionAvoidanceDisabled" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="36d4aadc-134e-1706-4d47-6169e0b808cb" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="05fb9ae8-0bef-44ae-939d-9bcda4238c84" />
+            <Simple name="CommandId" value="b5c4e057-0ae6-4466-a5cf-a770d7ca736d" />
+            <Simple name="CommandName" value="End If" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="b5c4e057-0ae6-4466-a5cf-a770d7ca736d" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="05fb9ae8-0bef-44ae-939d-9bcda4238c84" />
+            <Simple name="CommandId" value="e4119c3d-b767-4700-b7a3-968fa667c2fd" />
+            <Simple name="CommandName" value="If" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="VariableName" />
+                  <Simple type="System.String, mscorlib" value="cmd_name" />
+                </Item>
+                <Item>
+                  <Simple value="VariableValue" />
+                  <Simple type="System.String, mscorlib" value="cmd_eject_tips" />
+                </Item>
+                <Item>
+                  <Simple value="Operator" />
+                  <Simple type="System.String, mscorlib" value="Matches" />
+                </Item>
+                <Item>
+                  <Simple value="UseValueVariable" />
+                  <Simple type="System.Boolean, mscorlib" value="False" />
+                </Item>
+                <Item>
+                  <Simple value="ValueVariable" />
+                  <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4700-b7a3-968fa667c2fd" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="2776287b-aaeb-4fcc-9481-c994542e4ade" />
+            <Simple name="CommandId" value="6ba4bf72-4115-3e40-0495-ad84983cf2e8" />
+            <Simple name="CommandName" value="Eject Tips(VVP96)" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="plate" />
+                  <Simple type="System.String, mscorlib" value="tips_0" />
+                </Item>
+                <Item>
+                  <Simple value="plateVariable" />
+                  <Simple type="System.String, mscorlib" value="tip_box" />
+                </Item>
+                <Item>
+                  <Simple value="height" />
+                  <Simple type="System.Double, mscorlib" value="15" />
+                </Item>
+                <Item>
+                  <Simple value="motionProfileName" />
+                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                </Item>
+                <Item>
+                  <Simple value="commandFlags" />
+                  <Simple type="System.UInt32, mscorlib" value="3" />
+                </Item>
+                <Item>
+                  <Simple value="commandFlagsSrc" />
+                  <Simple type="System.UInt32, mscorlib" value="15" />
+                </Item>
+                <Item>
+                  <Simple value="commandFlagsDst" />
+                  <Simple type="System.UInt32, mscorlib" value="15" />
+                </Item>
+                <Item>
+                  <Simple value="collisionAvoidanceDisabled" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="05fb9ae8-0bef-44ae-939d-9bcda4238c84" />
+            <Simple name="CommandId" value="b5c4e057-0ae6-4466-a5cf-a770d7ca736d" />
+            <Simple name="CommandName" value="End If" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="b5c4e057-0ae6-4466-a5cf-a770d7ca736d" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="05fb9ae8-0bef-44ae-939d-9bcda4238c84" />
+            <Simple name="CommandId" value="d495d744-9ac3-4845-94f2-42e459af7b39" />
+            <Simple name="CommandName" value="String Builder" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="Expression" />
+                  <Simple type="System.String, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="AssignToVariable" />
+                  <Simple type="System.String, mscorlib" value="new_command" />
+                </Item>
+                <Item>
+                  <Simple value="ClearVariable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="d495d744-9ac3-4845-94f2-42e459af7b39" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="05fb9ae8-0bef-44ae-939d-9bcda4238c84" />
+            <Simple name="CommandId" value="5a7d799a-7fb3-4599-93a3-01e222ce4ab4" />
+            <Simple name="CommandName" value="Write To Output" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="OutputVariable" />
+                  <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="Output" />
+                  <Simple type="System.String, mscorlib" value="&quot;switched command&quot;" />
+                </Item>
+                <Item>
+                  <Simple value="ShowAsError" />
+                  <Simple type="System.Boolean, mscorlib" value="False" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="5a7d799a-7fb3-4599-93a3-01e222ce4ab4" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+        <Complex>
+          <Properties>
+            <Simple name="DeviceId" value="05fb9ae8-0bef-44ae-939d-9bcda4238c84" />
+            <Simple name="CommandId" value="a56d7718-7464-4af5-b9f7-3b50cbcefee0" />
+            <Simple name="CommandName" value="Loop Until" />
+            <Simple name="Enabled" value="True" />
+            <Dictionary name="Parameters">
+              <Items>
+                <Item>
+                  <Simple value="VariableName" />
+                  <Simple type="System.String, mscorlib" value="end" />
+                </Item>
+                <Item>
+                  <Simple value="VariableValue" />
+                  <Simple type="System.String, mscorlib" value="1" />
+                </Item>
+                <Item>
+                  <Simple value="Operator" />
+                  <Simple type="System.String, mscorlib" value="==" />
+                </Item>
+                <Item>
+                  <Simple value="UseValueVariable" />
+                  <Simple type="System.Boolean, mscorlib" value="False" />
+                </Item>
+                <Item>
+                  <Simple value="ValueVariable" />
+                  <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="StepSize" />
+                  <Simple type="System.Int32, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="a56d7718-7464-4af5-b9f7-3b50cbcefee0" />
+                </Item>
+              </Items>
+            </Dictionary>
+          </Properties>
+        </Complex>
+      </Items>
+    </Collection>
+    <Collection name="WorktableResourceMaps">
+      <Properties>
+        <Simple name="Capacity" value="2" />
+      </Properties>
+      <Items>
+        <Complex type="MethodManager.Core.Domain.MMWorktableResourceMap, MethodManager.Core">
+          <Properties>
+            <Collection name="ResourceStacks" type="System.Collections.Generic.List`1[[MethodManager.Core.Domain.MMLabwareStack, MethodManager.Core]], mscorlib">
+              <Properties>
+                <Simple name="Capacity" value="64" />
+              </Properties>
+              <Items>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_01" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_02" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_03" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_04" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="4" />
+                      </Properties>
+                      <Items>
+                        <Complex>
+                          <Properties>
+                            <Simple name="Name" value="tips_0" />
+                            <Simple name="BarcodeId" value="" />
+                            <Simple name="LabwareName" value="DDX-96-230F" />
+                            <Simple name="LabwareId" value="fb629ba8-3f4b-47ea-b384-9a7ff5d2485d" />
+                            <Simple name="Category" value="Tipbox" />
+                          </Properties>
+                        </Complex>
+                      </Items>
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_05" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="4" />
+                      </Properties>
+                      <Items>
+                        <Complex>
+                          <Properties>
+                            <Simple name="Name" value="plate_0" />
+                            <Simple name="BarcodeId" value="" />
+                            <Simple name="LabwareName" value="96 Well Plate" />
+                            <Simple name="LabwareId" value="3a90930d-2346-4b0c-8c5a-e50eb805a582" />
+                            <Simple name="Category" value="Plate" />
+                          </Properties>
+                        </Complex>
+                      </Items>
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_06" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_07" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_08" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_09" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_10" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="4" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_11" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="4" />
+                      </Properties>
+                      <Items>
+                        <Complex>
+                          <Properties>
+                            <Simple name="Name" value="plate_1" />
+                            <Simple name="BarcodeId" value="" />
+                            <Simple name="LabwareName" value="96 Well Plate" />
+                            <Simple name="LabwareId" value="3a90930d-2346-4b0c-8c5a-e50eb805a582" />
+                            <Simple name="Category" value="Plate" />
+                          </Properties>
+                        </Complex>
+                      </Items>
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_12" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_13" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_14" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_15" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_16" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="4" />
+                      </Properties>
+                      <Items>
+                        <Complex>
+                          <Properties>
+                            <Simple name="Name" value="plate_2" />
+                            <Simple name="BarcodeId" value="" />
+                            <Simple name="LabwareName" value="96 Well Plate" />
+                            <Simple name="LabwareId" value="3a90930d-2346-4b0c-8c5a-e50eb805a582" />
+                            <Simple name="Category" value="Plate" />
+                          </Properties>
+                        </Complex>
+                      </Items>
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_17" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_18" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_19" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_20" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_21" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_22" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_23" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_24" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_25" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_26" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_27" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_28" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_29" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_30" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_31" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_32" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_33" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_34" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_35" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_36" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_37" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_38" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_39" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_40" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_41" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_42" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_43" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_44" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_45" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_46" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_47" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_48" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_49" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_50" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_51" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_52" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_53" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_54" />
+                  </Properties>
+                </Complex>
+              </Items>
+            </Collection>
+            <Simple name="WorktableName" value="Left" />
+            <Simple name="DeviceName" value="Lynx" />
+            <Simple name="IsRuntime" value="False" />
+          </Properties>
+        </Complex>
+        <Complex type="MethodManager.Core.Domain.MMWorktableResourceMap, MethodManager.Core">
+          <Properties>
+            <Collection name="ResourceStacks" type="System.Collections.Generic.List`1[[MethodManager.Core.Domain.MMLabwareStack, MethodManager.Core]], mscorlib">
+              <Properties>
+                <Simple name="Capacity" value="64" />
+              </Properties>
+              <Items>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_01" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_02" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_03" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_04" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_05" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_06" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_07" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_08" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_09" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_13" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_14" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_15" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_16" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_17" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_19" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_20" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_21" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_22" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_23" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_24" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_25" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_26" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_27" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_28" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_29" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_30" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_31" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_32" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_33" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_34" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_35" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_36" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_37" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_38" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_39" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_40" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_41" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_42" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_43" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_44" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_45" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_46" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_47" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_48" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_49" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_50" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_51" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_52" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_53" />
+                  </Properties>
+                </Complex>
+                <Complex>
+                  <Properties>
+                    <Collection name="LabwareStackElems">
+                      <Properties>
+                        <Simple name="Capacity" value="0" />
+                      </Properties>
+                      <Items />
+                    </Collection>
+                    <Simple name="LocationName" value="Loc_54" />
+                  </Properties>
+                </Complex>
+              </Items>
+            </Collection>
+            <Simple name="WorktableName" value="Right" />
+            <Simple name="DeviceName" value="Lynx" />
+            <Simple name="IsRuntime" value="False" />
+          </Properties>
+        </Complex>
+      </Items>
+    </Collection>
+    <Simple name="UserPermission" value="True" />
+    <Simple name="SubMethodOnly" value="False" />
+    <Simple name="Description" value="" />
+    <Simple name="PlateIndex" value="-1" />
+    <Simple name="PlateName" value="" />
+    <Simple name="ScheduleID" value="" />
+  </Properties>
+</Complex>

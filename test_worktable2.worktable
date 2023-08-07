@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfMMSerializableLabwareStack xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MMSerializableLabwareStack>
+    <LabwareStackElems>
+      <MMLabwareVec>
+        <Name>plate_00</Name>
+        <BarcodeId />
+        <LabwareName>96 Well Plate</LabwareName>
+        <LabwareId>3a90930d-2346-4b0c-8c5a-e50eb805a582</LabwareId>
+        <Category>Plate</Category>
+      </MMLabwareVec>
+    </LabwareStackElems>
+    <LocationName>Loc_01</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_02</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_03</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_04</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_05</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_06</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_07</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_08</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_09</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_10</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_11</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_12</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems>
+      <MMLabwareVec>
+        <Name>tips_02</Name>
+        <BarcodeId />
+        <LabwareName>LXB-96-1250NF</LabwareName>
+        <LabwareId>596a4aa5-70b4-46fb-8f5a-1d9f45e1947e</LabwareId>
+        <Category>Tipbox</Category>
+      </MMLabwareVec>
+    </LabwareStackElems>
+    <LocationName>Loc_13</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_14</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems>
+      <MMLabwareVec>
+        <Name>plate_01</Name>
+        <BarcodeId />
+        <LabwareName>96 Well Plate</LabwareName>
+        <LabwareId>3a90930d-2346-4b0c-8c5a-e50eb805a582</LabwareId>
+        <Category>Plate</Category>
+      </MMLabwareVec>
+    </LabwareStackElems>
+    <LocationName>Loc_15</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_16</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_17</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_18</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems>
+      <MMLabwareVec>
+        <Name>tips_01</Name>
+        <BarcodeId />
+        <LabwareName>LXB-96-950F</LabwareName>
+        <LabwareId>3fde9f70-3019-47a0-b958-72a20d990530</LabwareId>
+        <Category>Tipbox</Category>
+      </MMLabwareVec>
+    </LabwareStackElems>
+    <LocationName>Loc_19</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_20</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_21</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_22</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_23</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_24</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_25</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_26</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_27</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_28</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_29</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_30</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_31</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_32</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_33</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_34</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_35</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_36</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_37</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_38</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_39</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_40</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_41</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_42</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_43</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_44</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_45</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_46</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_47</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_48</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_49</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_50</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_51</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_52</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_53</LocationName>
+  </MMSerializableLabwareStack>
+  <MMSerializableLabwareStack>
+    <LabwareStackElems />
+    <LocationName>Loc_54</LocationName>
+  </MMSerializableLabwareStack>
+</ArrayOfMMSerializableLabwareStack>
