@@ -33,7 +33,6 @@ tips = worktable.allocate_labware('tips_01')
 plate = worktable.allocate_labware('plate_01')
 
 lynx.load_tips(tips=tips)
-
 response = lynx.aspirate_96_vvp(plate = plate, channel_data=channel_data)
 response = lynx.dispense_96_vvp(plate = plate, channel_data=channel_data)
 lynx.eject_tips(tips=tips)
