@@ -15,9 +15,7 @@ cols = range(1, 13)
 num_rows = 8
 num_cols = 12
 
-channel_data = [[12 + row*2, 0, 0, 0]
-                for row in range(num_rows) for col in range(num_cols)]
-
+channel_data = [[10] for row in range(num_rows) for col in range(num_cols)]
 
 ip = get_host_ip()
 lynx = LynxInterface(ip=ip, port=47000, simulating=True)
