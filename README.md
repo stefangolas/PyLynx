@@ -1,7 +1,7 @@
 # PyLynx
 
 ## About
-PyLynx is a command-level Python interface to the Lynx liquid-handling robot by Dynamic Devices. PyLynx works by using the TCP/IP interface to the Lynx to communicate with a universal method.
+PyLynx is a command-level Python interface to the Lynx liquid-handling robot by Dynamic Devices. PyLynx works using the TCP/IP interface to the Lynx to communicate with a universal method.
 
 ## Example Code
 
