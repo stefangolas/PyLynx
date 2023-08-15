@@ -5,12 +5,8 @@ Created on Mon Aug  7 12:11:37 2023
 @author: stefa
 """
 
-from mm4_errors import mm4_errors_dict
-from worktable import Worktable, Labware
-from configure_server import get_host_ip
-from mm4_cmd import LynxInterface
+from pylynx import LynxInterface, get_host_ip
 import string
-import time
 
 rows = string.ascii_uppercase[0:8]
 cols = range(1, 13)

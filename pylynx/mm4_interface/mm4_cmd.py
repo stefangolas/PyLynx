@@ -9,13 +9,12 @@ import socket
 import json
 import string
 import time
-from mm4_errors import mm4_errors_dict
-from worktable import Worktable, Labware
 import subprocess
-import math
-from configure_server import get_host_ip
-import time
-from method_parser import command_enum
+
+from .mm4_errors import mm4_errors_dict
+from .worktable import Worktable, Labware
+from .configure_server import get_host_ip
+from .method_parser import command_enum
 
 
 mm4_exe = 'C:\\Program Files (x86)\\Dynamic Devices\\MethodManager4\\MethodManager.DX.exe'
@@ -265,7 +264,7 @@ class LynxInterface:
         self.watch_connect_enum = '16'
 
         self.password = 'Remote'
-        self.method_name = 'method1'
+        self.method_name = 'universal_method'
 
     def setup(self):
         r = subprocess.Popen([mm4_exe])
@@ -277,11 +276,11 @@ class LynxInterface:
         self.start_method(self.method_name)
 
     def wait_for_simulation_mode(self):
+        print("Waiting for simulation mode before starting")
         simulation_mode = False
         while not simulation_mode:
             r = self.get_application_state()
             simulation_mode = r['ApplicationState'] == 3
-            print("Waiting for simulation mode before starting")
             time.sleep(1)
 
     def send_packet(self, payload):
@@ -417,7 +416,6 @@ class LynxInterface:
         channel_data = [';'.join(i) for i in channel_data]
         channel_data = ','.join(channel_data)
         channel_data = 'VI;12;8,' + channel_data
-        print(channel_data)
         return channel_data
 
     def command_builder(self, template, **kwargs):
@@ -585,31 +583,3 @@ rows = string.ascii_uppercase[0:8]
 cols = range(1, 13)
 
 
-channel_data = [[12 + row*2, 0, 0, 0]
-                for row in range(num_rows) for col in range(num_cols)]
-
-
-# if __name__ == '__main__':
-
-#     ip = get_host_ip()
-#     lynx = LynxInterface(ip=ip, port=47000, simulating=True)
-
-#     lynx.setup()
-
-#     worktable = lynx.load_worktable('test_worktable3.worktable')
-
-#     tips = worktable.allocate_labware('tips_01')
-#     plate = worktable.allocate_labware('plate_01')
-
-#     lynx.load_tips(tips=tips)
-#     lynx.aspirate_96_vvp(plate=plate, channel_data=channel_data)
-#     lynx.dispense_96_vvp(plate=plate, channel_data=channel_data)
-#     lynx.eject_tips(tips=tips)
-
-#     lynx.gripper_move_plate(source = 'plate_01', destination = 'Loc_07', gripper_side = 'left')
-
-#     worktable = lynx.load_worktable('test_worktable4.worktable')
-#     lynx.tip_pickup_sv('tips_05', row = 2, column = 5)
-#     lynx.aspirate_sv('plate_01', vol = 30, row = 1, column = 8)
-#     lynx.dispense_sv('plate_01', vol = 30, row = 2, column = 2)
-#     lynx.tip_eject_sv('tips_05', row = 2, column = 5)

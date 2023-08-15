@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pylynx
+Version: 0.1
+Summary: Python for Dynamic Device Lynx
+Home-page: https://github.com/stefangolas/pylynx.git
+Author: Stefan Golas
+Author-email: stefanmgolas@gmail.com
+License: MIT

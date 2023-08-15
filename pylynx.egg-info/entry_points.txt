@@ -1,0 +1,3 @@
+[console_scripts]
+pylynx-configure = pylynx.auto_configure:auto_configure
+pylynx-new-project = pylynx.template_creator:create_project
