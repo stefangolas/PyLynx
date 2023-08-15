@@ -8,25 +8,24 @@ PyLynx is a command-level Python interface to the Lynx liquid-handling robot by 
 ```python
 from pylynx import LynxInterface, get_host_ip
 import string
-
 rows = string.ascii_uppercase[0:8]
 cols = range(1, 13)
-
 num_rows = 8
 num_cols = 12
 
 channel_data = [[10] for row in range(num_rows) for col in range(num_cols)]
 
+# Initialize the Lynx interface
 ip = get_host_ip()
 lynx = LynxInterface(ip=ip, port=47000, simulating=True)
-
 lynx.setup()
 
+# Assign resources from the worktable
 worktable = lynx.load_worktable('test_worktable3.worktable')
-
 tips = worktable.allocate_labware('tips_01')
 plate = worktable.allocate_labware('plate_01')
 
+# Run liquid-handling commands
 lynx.load_tips(tips = tips)
 response = lynx.aspirate_96_vvp(plate = plate, channel_data = channel_data)
 response = lynx.dispense_96_vvp(plate = plate, channel_data = channel_data)
