@@ -42,7 +42,8 @@ class MM4Command:
 
         # Check if any fields are empty or are not strings
 
-        if any(value == '' for value in cmd.values()):
+        if any(cmd[key] == '' for key in cmd):
+            print(cmd.values())
             raise Exception("Command dictionary must not have empty values")
 
         if any(not isinstance(value, str) for value in cmd.values()):
@@ -279,7 +280,6 @@ class LynxInterface:
         simulation_mode = False
         while not simulation_mode:
             r = self.get_application_state()
-            r = json.loads(r)
             simulation_mode = r['ApplicationState'] == 3
             print("Waiting for simulation mode before starting")
             time.sleep(1)
@@ -291,7 +291,8 @@ class LynxInterface:
             self.sock.connect((self.server_ip, self.port))
             payload = json.dumps(payload)
             self.sock.sendall(payload.encode())
-            response = self.sock.recv(1024).decode('UTF-8')
+            response = self.sock.recv(4096).decode('UTF-8')
+            response = json.loads(response)
             self.check_response(response)
         finally:
             self.sock.close()
@@ -299,7 +300,6 @@ class LynxInterface:
         return response
 
     def check_response(self, r):
-        r = json.loads(r)
         if r["Error"] != 0:
             raise Exception(mm4_errors_dict[r["Error"]])
 
@@ -397,12 +397,10 @@ class LynxInterface:
     def wait_for_command_finish(self):
         command_finished = False
         r = self.get_variable_mm4('new_command')
-        r = json.loads(r)
 
         self.ensure_active_method(r)
         while not command_finished:
             r = self.get_variable_mm4('new_command')
-            r = json.loads(r)
             self.ensure_active_method(r)
             command_finished = r['Result'] == "0"
             time.sleep(0.1)
@@ -419,6 +417,7 @@ class LynxInterface:
         channel_data = [';'.join(i) for i in channel_data]
         channel_data = ','.join(channel_data)
         channel_data = 'VI;12;8,' + channel_data
+        print(channel_data)
         return channel_data
 
     def command_builder(self, template, **kwargs):
@@ -426,8 +425,6 @@ class LynxInterface:
         Apply parameters to all required arguments to build a command ready
         to be sent to MM4
         """
-
-        required_fields = [k for k, v in template.__dict__.items() if not v]
 
         kwargs = {k: str(v) for k, v in kwargs.items()}
 
@@ -459,6 +456,8 @@ class LynxInterface:
         cmd = aspirate_vvp_template.apply_cmd_params(params_dict)
 
         self.send_command(cmd)
+        response = self.get_variable_mm4('Lynx.VVP96.Aspirate.Output')["Result"]
+        return response
 
     def dispense_96_vvp(self, plate, channel_data):
 
@@ -470,6 +469,9 @@ class LynxInterface:
         cmd = dispense_vvp_template.apply_cmd_params(params_dict)
 
         self.send_command(cmd)
+        response = self.get_variable_mm4('Lynx.VVP96.Dispense.Output')["Result"]
+        return response
+
 
     def mix_96_vvp(self, plate, mix_data, mix_cycles, blowout_vol, **kwargs):
         cmd = self.command_builder(mix_vvp_template,
@@ -506,41 +508,41 @@ class LynxInterface:
         params_dict = {
             'gripper_move_location': location,
             'gripper_move_side': gripper_side,
+            'cmd_key': f'Move To Location(Gripper{gripper_side})'
         }
 
         if kwargs:
             params_dict.update(kwargs)
         
         cmd = gripper_move_to_location_template.apply_cmd_params(params_dict)
-        cmd.cmd_key = f'Move To Location(Gripper{self.gripper_side})'
         self.send_command(cmd)
 
     def gripper_move_plate(self, source, destination, gripper_side, **kwargs):
         cmd = self.command_builder(gripper_move_plate_template,
-                                   gripper_move_plate_source=source,
-                                   gripper_move_plate_destination=destination,
-                                   gripper_move_side=gripper_side,
+                                   gripper_move_plate_source = source,
+                                   gripper_move_plate_destination = destination,
+                                   gripper_move_side = gripper_side,
+                                   cmd_key = f'Move Plate(Gripper{gripper_side})',
                                    **kwargs)
         
-        cmd.cmd_key = f'Move Plate(Gripper{self.gripper_side})'
         self.send_command(cmd)
 
     def gripper_move_to_plate(self, location, gripper_side, **kwargs):
         cmd = self.command_builder(gripper_move_to_plate_template,
                                    gripper_move_location=location,
                                    gripper_move_side=gripper_side,
+                                   cmd_key = f'Move To Plate(Gripper{gripper_side})',
                                    **kwargs)
         
-        cmd.cmd_key = f'Move To Plate(Gripper{self.gripper_side})'
         self.send_command(cmd)
 
     def gripper_move_lid(self, location, gripper_side, **kwargs):
         cmd = self.command_builder(gripper_move_lid_template,
                                    gripper_put_plate=location,
                                    gripper_move_side=gripper_side,
+                                   cmd_key = f'Move Lid(Gripper{gripper_side})',
                                    **kwargs)
         
-        cmd.cmd_key = f'Move Lid(Gripper{self.gripper_side})'
         self.send_command(cmd)
 
     def aspirate_sv(self, plate, row, column, vol, **kwargs):
@@ -550,7 +552,6 @@ class LynxInterface:
                                    asp_row=row,
                                    asp_384SV_vol=vol,
                                    **kwargs)
-        
         
         self.send_command(cmd)
 
@@ -588,27 +589,27 @@ channel_data = [[12 + row*2, 0, 0, 0]
                 for row in range(num_rows) for col in range(num_cols)]
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
 
-    ip = get_host_ip()
-    lynx = LynxInterface(ip=ip, port=47000, simulating=True)
+#     ip = get_host_ip()
+#     lynx = LynxInterface(ip=ip, port=47000, simulating=True)
 
-    lynx.setup()
+#     lynx.setup()
 
-    worktable = lynx.load_worktable('test_worktable3.worktable')
+#     worktable = lynx.load_worktable('test_worktable3.worktable')
 
-    tips = worktable.allocate_labware('tips_01')
-    plate = worktable.allocate_labware('plate_01')
+#     tips = worktable.allocate_labware('tips_01')
+#     plate = worktable.allocate_labware('plate_01')
 
-    lynx.load_tips(tips=tips)
-    lynx.aspirate_96_vvp(plate=plate, channel_data=channel_data)
-    lynx.dispense_96_vvp(plate=plate, channel_data=channel_data)
-    lynx.eject_tips(tips=tips)
+#     lynx.load_tips(tips=tips)
+#     lynx.aspirate_96_vvp(plate=plate, channel_data=channel_data)
+#     lynx.dispense_96_vvp(plate=plate, channel_data=channel_data)
+#     lynx.eject_tips(tips=tips)
 
-    lynx.gripper_move_plate(source = 'plate_01', destination = 'Loc_07', gripper_side = 'left')
+#     lynx.gripper_move_plate(source = 'plate_01', destination = 'Loc_07', gripper_side = 'left')
 
-    worktable = lynx.load_worktable('test_worktable4.worktable')
-    lynx.tip_pickup_sv('tips_05', row = 2, column = 5)
-    lynx.aspirate_sv('plate_01', vol = 30, row = 1, column = 8)
-    lynx.dispense_sv('plate_01', vol = 30, row = 2, column = 2)
-    lynx.tip_eject_sv('tips_05', row = 2, column = 5)
+#     worktable = lynx.load_worktable('test_worktable4.worktable')
+#     lynx.tip_pickup_sv('tips_05', row = 2, column = 5)
+#     lynx.aspirate_sv('plate_01', vol = 30, row = 1, column = 8)
+#     lynx.dispense_sv('plate_01', vol = 30, row = 2, column = 2)
+#     lynx.tip_eject_sv('tips_05', row = 2, column = 5)
