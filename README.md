@@ -28,6 +28,12 @@ G  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
 H  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
 ```
 
+
+This can be run as a VVP command as shown:
+```python
+lynx.aspirate_96_vvp(plate = plate, array = array)
+```
+
 ## Example Code
 
 ```python
