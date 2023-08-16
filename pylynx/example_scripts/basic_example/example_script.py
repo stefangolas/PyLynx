@@ -16,6 +16,7 @@ df = pd.DataFrame(data)
 array = ArrayVVP(df)
 
 
+
 ip = get_host_ip()
 lynx = LynxInterface(ip=ip, port=47000, simulating=True)
 
@@ -27,8 +28,8 @@ tips = worktable.allocate_labware('tips_01')
 plate = worktable.allocate_labware('plate_01')
 
 lynx.load_tips(tips=tips)
-response = lynx.aspirate_96_vvp(plate = plate, channel_data=channel_data)
-response = lynx.dispense_96_vvp(plate = plate, channel_data=channel_data)
+response = lynx.aspirate_96_vvp(plate = plate, array = array)
+response = lynx.dispense_96_vvp(plate = plate, array = array)
 lynx.eject_tips(tips=tips)
 
 lynx.gripper_move_plate(source = 'Loc_15', destination = 'Loc_06', gripper_side = 'Left')
