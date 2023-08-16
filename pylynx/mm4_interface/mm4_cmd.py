@@ -15,6 +15,7 @@ from .mm4_errors import mm4_errors_dict
 from .worktable import Worktable, Labware
 from .configure_server import get_host_ip
 from .method_parser import command_enum
+from .vvp import ArrayVVP
 
 
 mm4_exe = 'C:\\Program Files (x86)\\Dynamic Devices\\MethodManager4\\MethodManager.DX.exe'
@@ -436,7 +437,7 @@ class LynxInterface:
         return cmd
 
 #---- MM4 Commands ------------------------------------------------------------#
-    def load_tips(self, tips):
+    def load_tips(self, tips: Labware):
         assert tips.resource_type == 'Tipbox', 'Eject location must be type tipbox'
 
         params_dict = {'tip_box': tips.name}
@@ -445,8 +446,8 @@ class LynxInterface:
 
         self.send_command(cmd)
 
-    def aspirate_96_vvp(self, plate, channel_data):
-        channel_data = self.vvp_command_builder(channel_data)
+    def aspirate_96_vvp(self, plate: Labware, array: ArrayVVP):
+        channel_data = array.convert_to_cmd_data()
 
         params_dict = {'asp_plate': plate.name,
                        'asp_data': channel_data}
@@ -457,9 +458,9 @@ class LynxInterface:
         response = self.get_variable_mm4('Lynx.VVP96.Aspirate.Output')["Result"]
         return response
 
-    def dispense_96_vvp(self, plate, channel_data):
+    def dispense_96_vvp(self, plate: Labware, array: ArrayVVP):
 
-        channel_data = self.vvp_command_builder(channel_data)
+        channel_data = array.convert_to_cmd_data()
 
         params_dict = {'disp_plate': plate.name,
                        'disp_data': channel_data}
@@ -479,7 +480,7 @@ class LynxInterface:
                                    **kwargs)
         self.send_command(cmd)
 
-    def eject_tips(self, tips):
+    def eject_tips(self, tips: Labware):
         assert tips.resource_type == 'Tipbox', 'Eject location must be type tipbox'
 
         params_dict = {
