@@ -12,6 +12,10 @@ Commands to the 96-channel VVP use Pandas dataframes (with some extra functional
 To initialize a VVP command array, run
 ```python
 array = VVPArray()
+```
+
+Here is the initialized array:
+```python
 print(array)
     0    1    2    3    4    5    6    7    8    9    10   11
 A  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
