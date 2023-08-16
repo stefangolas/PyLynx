@@ -78,8 +78,8 @@ plate = worktable.allocate_labware('plate_01')
 
 # Run liquid-handling commands
 lynx.load_tips(tips = tips)
-response = lynx.aspirate_96_vvp(plate = plate, channel_data = channel_data)
-response = lynx.dispense_96_vvp(plate = plate, channel_data = channel_data)
+response = lynx.aspirate_96_vvp(plate = plate, array = array)
+response = lynx.dispense_96_vvp(plate = plate, array = array)
 lynx.eject_tips(tips = tips)
 
 ```
