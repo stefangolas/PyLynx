@@ -15,7 +15,7 @@ from .mm4_errors import mm4_errors_dict
 from .worktable import Worktable, Labware
 from .configure_server import get_host_ip
 from .method_parser import command_enum
-from .vvp import ArrayVVP
+from .vvp import VVPArray
 
 
 mm4_exe = 'C:\\Program Files (x86)\\Dynamic Devices\\MethodManager4\\MethodManager.DX.exe'
@@ -446,7 +446,7 @@ class LynxInterface:
 
         self.send_command(cmd)
 
-    def aspirate_96_vvp(self, plate: Labware, array: ArrayVVP):
+    def aspirate_96_vvp(self, plate: Labware, array: VVPArray):
         channel_data = array.convert_to_cmd_data()
 
         params_dict = {'asp_plate': plate.name,
@@ -458,7 +458,7 @@ class LynxInterface:
         response = self.get_variable_mm4('Lynx.VVP96.Aspirate.Output')["Result"]
         return response
 
-    def dispense_96_vvp(self, plate: Labware, array: ArrayVVP):
+    def dispense_96_vvp(self, plate: Labware, array: VVPArray):
 
         channel_data = array.convert_to_cmd_data()
 

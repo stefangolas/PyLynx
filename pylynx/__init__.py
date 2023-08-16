@@ -8,5 +8,5 @@ import os
 
 from .mm4_interface.mm4_cmd import LynxInterface
 from .mm4_interface.configure_server import get_host_ip
-from .mm4_interface.vvp import ArrayVVP
+from .mm4_interface.vvp import VVPArray
 
