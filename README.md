@@ -5,13 +5,18 @@ PyLynx is a command-level Python interface to the Lynx liquid-handling robot by 
 
 Raise an issue, post on labautomation.io, or contact stefanmgolas@gmail.com if you have any questions.
 
-## Pandas VVPArray
+## VVP Commands
 
 Commands to the 96-channel VVP use Pandas dataframes (with some extra functionality) to specify volumes. This makes it easy to access and modify command data.
 
 To initialize a VVP command array, run
 ```python
+from pylynx import VVPArray
 array = VVPArray()
+```
+
+Here is the initialized array:
+```python
 print(array)
     0    1    2    3    4    5    6    7    8    9    10   11
 A  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
@@ -22,6 +27,30 @@ E  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
 F  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
 G  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
 H  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
+```
+
+This can be modified with standard numpy notation:
+```python
+array.loc['A':'C',] = 20.0
+array.loc[:,8:10] = 30.0
+```
+
+```python
+print(array)
+     0     1     2     3     4     5     6     7     8     9     10    11
+A  20.0  20.0  20.0  20.0  20.0  20.0  20.0  20.0  30.0  30.0  30.0  20.0
+B  20.0  20.0  20.0  20.0  20.0  20.0  20.0  20.0  30.0  30.0  30.0  20.0
+C  20.0  20.0  20.0  20.0  20.0  20.0  20.0  20.0  30.0  30.0  30.0  20.0
+D   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0  30.0  30.0  30.0   0.0
+E   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0  30.0  30.0  30.0   0.0
+F   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0  30.0  30.0  30.0   0.0
+G   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0  30.0  30.0  30.0   0.0
+H   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0  30.0  30.0  30.0   0.0
+```
+
+And the dataframe can be run as a VVP command as shown:
+```python
+lynx.aspirate_96_vvp(plate = plate, array = array)
 ```
 
 ## Example Code
