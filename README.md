@@ -5,7 +5,7 @@ PyLynx is a command-level Python interface to the Lynx liquid-handling robot by 
 
 Raise an issue, post on labautomation.io, or contact stefanmgolas@gmail.com if you have any questions.
 
-## Using Pandas with VVP
+## Pandas VVPArray
 
 Commands to the 96-channel VVP use Pandas dataframes (with some extra functionality) to specify volumes. This makes it easy to access and modify command data.
 
@@ -35,7 +35,7 @@ import pandas as pd
 data = np.zeros((8, 12))
 data[:, :3] = 20
 df = pd.DataFrame(data)
-array = ArrayVVP(df)
+array = VVPArray(df)
 
 # Initialize the Lynx interface
 ip = get_host_ip()
