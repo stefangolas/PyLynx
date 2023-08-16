@@ -6,14 +6,15 @@ PyLynx is a command-level Python interface to the Lynx liquid-handling robot by 
 ## Example Code
 
 ```python
-from pylynx import LynxInterface, get_host_ip
-import string
-rows = string.ascii_uppercase[0:8]
-cols = range(1, 13)
-num_rows = 8
-num_cols = 12
+from pylynx import LynxInterface, get_host_ip, ArrayVVP
+import numpy as np
+import pandas as pd
 
-channel_data = [[10] for row in range(num_rows) for col in range(num_cols)]
+
+data = np.zeros((8, 12))
+data[:, :3] = 20
+df = pd.DataFrame(data)
+array = ArrayVVP(df)
 
 # Initialize the Lynx interface
 ip = get_host_ip()
