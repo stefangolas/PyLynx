@@ -3,17 +3,39 @@
 ## About
 PyLynx is a command-level Python interface to the Lynx liquid-handling robot by Dynamic Devices. PyLynx works using the TCP/IP interface to the Lynx to communicate with a universal method.
 
+Raise an issue, post on labautomation.io, or contact stefanmgolas@gmail.com if you have any questions.
+
+## Pandas VVPArray
+
+Commands to the 96-channel VVP use Pandas dataframes (with some extra functionality) to specify volumes. This makes it easy to access and modify command data.
+
+To initialize a VVP command array, run
+```python
+array = VVPArray()
+print(array)
+    0    1    2    3    4    5    6    7    8    9    10   11
+A  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
+B  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
+C  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
+D  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
+E  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
+F  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
+G  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
+H  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
+```
+
 ## Example Code
 
 ```python
-from pylynx import LynxInterface, get_host_ip
-import string
-rows = string.ascii_uppercase[0:8]
-cols = range(1, 13)
-num_rows = 8
-num_cols = 12
+from pylynx import LynxInterface, get_host_ip, ArrayVVP
+import numpy as np
+import pandas as pd
 
-channel_data = [[10] for row in range(num_rows) for col in range(num_cols)]
+
+data = np.zeros((8, 12))
+data[:, :3] = 20
+df = pd.DataFrame(data)
+array = VVPArray(df)
 
 # Initialize the Lynx interface
 ip = get_host_ip()
