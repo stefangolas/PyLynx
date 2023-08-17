@@ -53,7 +53,16 @@ And the dataframe can be run as a VVP command as shown:
 lynx.aspirate_96_vvp(plate = plate, array = array)
 ```
 
-## Example Code
+### Normalization
+Create a VVPArray of volumes that normalize the concentrations in a plate with the `normalize` function.
+
+```python
+data = np.random.randint(1, 11, size=(8, 12))
+df = pd.DataFrame(data)
+normalization_vols = normalize(df, v1 = 30, c2 = 5)
+```
+
+## Example Script
 
 ```python
 from pylynx import LynxInterface, get_host_ip, ArrayVVP
@@ -78,8 +87,8 @@ plate = worktable.allocate_labware('plate_01')
 
 # Run liquid-handling commands
 lynx.load_tips(tips = tips)
-response = lynx.aspirate_96_vvp(plate = plate, channel_data = channel_data)
-response = lynx.dispense_96_vvp(plate = plate, channel_data = channel_data)
+response = lynx.aspirate_96_vvp(plate = plate, array = array)
+response = lynx.dispense_96_vvp(plate = plate, array = array)
 lynx.eject_tips(tips = tips)
 
 ```
@@ -90,7 +99,7 @@ lynx.eject_tips(tips = tips)
 3. Run `git clone https://github.com/stefangolas/PyLynx.git` from the command line
 4. Run `cd pylynx`
 5. Run `pip install -e .`
-6. Run `pylynx-configure`
+6. Run `pylynx-configure <Workspace_name>` <br> **Note:** PyLynx only currently works with the demo workspace that ships in MM4_Files
 7. Make a directory outside of the pylynx folder and `cd` into that
 8. Run `pylynx-new-project`
 9. Run `py example_script.py`
