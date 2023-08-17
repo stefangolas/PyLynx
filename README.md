@@ -53,7 +53,16 @@ And the dataframe can be run as a VVP command as shown:
 lynx.aspirate_96_vvp(plate = plate, array = array)
 ```
 
-## Example Code
+### Normalization
+Create a VVPArray of volumes that normalize the concentrations in a plate with the `normalize` function.
+
+```python
+data = np.random.randint(1, 11, size=(8, 12))
+df = pd.DataFrame(data)
+normalization_vols = normalize(df, v1 = 30, c2 = 5)
+```
+
+## Example Script
 
 ```python
 from pylynx import LynxInterface, get_host_ip, ArrayVVP
