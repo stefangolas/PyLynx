@@ -44,6 +44,7 @@ class VVPArray(pd.DataFrame):
     def _apply_alphabetical_index(self):
         index_labels = list(string.ascii_uppercase)[:len(self)]
         self.index = index_labels
+        self.columns = list(range(1, len(self.columns) + 1))
 
     def convert_to_cmd_data(self):
         flat_list = []
