@@ -8,7 +8,7 @@ import os
 import shutil
 
 try:
-    MM4_data_path = os.abspath(os.environ['MM4_DATA_PATH'])
+    MM4_data_path = os.path.abspath(os.environ['MM4_DATA_PATH'])
 except KeyError:
     MM4_data_path = os.path.abspath("C:\ProgramData\MethodManager4")
 
@@ -16,6 +16,7 @@ this_file_dir = os.path.dirname(os.path.abspath(__file__))
 PACKAGE_DIR = os.path.abspath(os.path.join(this_file_dir))
 EXAMPLE_DIR = os.path.join(PACKAGE_DIR, 'example_scripts', 'basic_example')
 universal_method_path = os.path.join(PACKAGE_DIR, 'mm4_files', 'universal_method.met')
+method_variables_path = os.path.join(PACKAGE_DIR, 'mm4_files', 'WorkspaceVariables.config')
 
 
 def copy_files(source_dir, destination_dir):

@@ -8,7 +8,7 @@ Created on Fri Aug 18 15:49:05 2023
 import os
 import re
 import xml.etree.ElementTree as ET
-from ..file_utils import universal_method_path
+from ..file_utils import universal_method_path, MM4_data_path, method_variables_path
 from .method_parser import commands_list
 
 generics = ['Go To Step','End If','If','Write To Output','Loop Until','String Builder', 'Begin Loop','Wait For Variable']
@@ -27,7 +27,7 @@ stack_name_xpath = ".//Properties//Simple[@name='LocationName']"
 #--------------------------------------------------------------------------------#
 
 
-def set_method_worktable(sides, method_tree):
+def set_worktable_sides(sides, method_tree):
     method_root = method_tree.getroot()
     method_worktables = method_root.find(method_worktables_xpath)
     
@@ -49,16 +49,15 @@ def get_worktable_side(wt):
 
 def get_workspace_sides(workspace_name):
     sides = []
-    workspace_files = os.listdir(f"C:\\ProgramData\\MethodManager4\\{workspace_name}\\Configuration")
+    workspace_files = os.listdir(f"{MM4_data_path}\\{workspace_name}\\Configuration")
     for side in 'Left', 'Right':
         side_exists = len([file for file in workspace_files if side in file])>0
         if side_exists:
             sides.append(side)
     return sides
 
-# TODO make MM4 workspace directory parameterized by an environment variable
 def get_workspace_tools(workspace_name):
-    tree = ET.parse(f"C:\\ProgramData\\MethodManager4\\{workspace_name}\\Configuration\\Lynx.config")
+    tree = ET.parse(f"{MM4_data_path}\\{workspace_name}\\Configuration\\Lynx.config")
     root = tree.getroot()
     tools = [el.text for el in root.findall(".//Name")]
     return tools
@@ -90,7 +89,7 @@ def remove_incompatible_commands(workspace_name, method_tree):
     return method_tree
         
 def get_worktable_locations(workspace_name, side):
-    workspace_worktable = ET.parse(f"C:\\ProgramData\\MethodManager4\\{workspace_name}\\Configuration\\Lynx.{side}.Worktable.config")
+    workspace_worktable = ET.parse(f"{MM4_data_path}\\{workspace_name}\\Configuration\\Lynx.{side}.Worktable.config")
     ws = workspace_worktable.getroot()
     ws_locs = [name.text for name in ws.findall(".//Name")]
     return ws_locs
@@ -133,22 +132,48 @@ def set_worktable_capacity(workspace_name, method_tree):
 
     return method_tree
             
+def list_workspace_vars(workspace_vars_root):
+    variables = workspace_vars_root.find(".//Variables")
+    list_of_vars = []
+    for v in variables:
+        v_name = v.find(".//Name").text
+        list_of_vars.append(v_name)
+    return list_of_vars
 
+
+def add_method_variables(workspace_name):
+    workspace_variables_path = f"{MM4_data_path}\\{workspace_name}\\WorkspaceVariables.config"
+    workspace_vars_tree = ET.parse(workspace_variables_path)
+    workspace_vars_root = workspace_vars_tree.getroot()
+    ws_variables_node = workspace_vars_root.find(".//Variables")
+    workspace_vars = list_workspace_vars(workspace_vars_root)
+    
+    method_vars_tree = ET.parse(method_variables_path)
+    
+    method_vars_root = method_vars_tree.getroot()
+    variables = method_vars_root.find(".//Variables")
+    for v in variables:
+        v_name = v.find(".//Name").text
+        if v_name not in workspace_vars:
+            ws_variables_node.append(v)
+    
+    workspace_vars_tree.write(workspace_variables_path)
+        
 
 def deploy_to_workspace(workspace_name):
     """
     Configure the universal method to be compatible
-    with a workspace and deploy it
+    with a workspace and then deploy it to that workspace
     """
     
     method_tree = ET.parse(universal_method_path)
     
     sides = get_workspace_sides(workspace_name)
-    method_tree = set_method_worktable(sides, method_tree)
+    method_tree = set_worktable_sides(sides, method_tree)
     method_tree = remove_incompatible_commands(workspace_name, method_tree)
     method_tree = set_worktable_capacity(workspace_name, method_tree)
     
-    workspace_path = os.path.abspath(f"C:\\ProgramData\\MethodManager4\\{workspace_name}")
+    workspace_path = os.path.abspath(f"{MM4_data_path}\\{workspace_name}")
     method_path = os.path.join(workspace_path, "Methods", "universal_method.met")
     method_tree.write(method_path)
 

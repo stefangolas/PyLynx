@@ -37,7 +37,12 @@ class Well_VVP:
 
     
 class VVPArray(pd.DataFrame):
-    def __init__(self, data = np.zeros((8, 12)), columns=None, **kwargs):
+    def __init__(self, data=None, columns=None, **kwargs):
+        if data is None:
+            data = np.copy(np.zeros((8, 12)))
+        else:
+            data = np.array(data)
+        
         super().__init__(data, columns=columns, **kwargs)
         self._apply_alphabetical_index()
 
@@ -64,3 +69,35 @@ class VVPArray(pd.DataFrame):
         return self.iloc[:, index]
     
 
+def flatten_list(array):
+    flat_list = []
+    for index, row in array.iterrows():
+        flat_list.extend(row.tolist())
+    
+    channel_data = [str(well_vol) for well_vol in flat_list]
+    return channel_data
+
+
+class VVPArrays:
+    
+    def __init__(self, liquid_vols: VVPArray, pre_air_vols: VVPArray, post_air_vols: VVPArray):
+        self.vols = liquid_vols
+        self.pre_air_vols = pre_air_vols
+        self.post_air_vols = post_air_vols
+       
+    def convert_to_cmd_data(self):
+        
+        vols = flatten_list(self.vols)
+        pre_air_vols = flatten_list(self.pre_air_vols)
+        post_air_vols = flatten_list(self.post_air_vols)
+        
+        channels = []
+        for idx, i in enumerate(zip(vols, pre_air_vols, post_air_vols)):
+            channel = ';'.join([vols[idx], pre_air_vols[idx], post_air_vols[idx]])
+            channels.append(channel)
+        
+        channels = ','.join(channels)
+        
+        channels = 'VI;12;8,' + channels
+        
+        return channels
