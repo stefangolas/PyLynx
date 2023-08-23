@@ -7,8 +7,11 @@ Created on Tue Aug 15 16:16:16 2023
 import os
 import shutil
 
+try:
+    MM4_data_path = os.abspath(os.environ['MM4_DATA_PATH'])
+except KeyError:
+    MM4_data_path = os.path.abspath("C:\ProgramData\MethodManager4")
 
-MM4_data_path = os.path.abspath("C:\ProgramData\MethodManager4")
 this_file_dir = os.path.dirname(os.path.abspath(__file__))
 PACKAGE_DIR = os.path.abspath(os.path.join(this_file_dir))
 EXAMPLE_DIR = os.path.join(PACKAGE_DIR, 'example_scripts', 'basic_example')

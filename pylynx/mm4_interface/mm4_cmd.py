@@ -268,12 +268,14 @@ class LynxInterface:
         self.method_name = 'universal_method'
 
     def setup(self):
-        r = subprocess.Popen([mm4_exe])
-        time.sleep(3)
+        try:
+            self.get_application_state() # Check if MM4 is open before trying to open it again
+        except ConnectionRefusedError:
+            subprocess.Popen([mm4_exe])
+        time.sleep(3) # Needed to wait before pinging server
         if self.simulating:
             self.wait_for_simulation_mode()
         self.watch_method_mm4()
-        #self.reset_all_variables()
         self.start_method(self.method_name)
 
     def wait_for_simulation_mode(self):
