@@ -99,7 +99,6 @@ lynx.eject_tips(tips = tips)
 3. Run `git clone https://github.com/stefangolas/PyLynx.git` from the command line
 4. Run `cd pylynx`
 5. Run `pip install -e .`
-6. Run `pylynx-configure <Workspace_name>` <br> **Note:** PyLynx only currently works with the demo workspace that ships in MM4_Files
-7. Make a directory outside of the pylynx folder and `cd` into that
-8. Run `pylynx-new-project`
-9. Run `py example_script.py`
+6. Run `pylynx-configure <Workspace_name>`
+7. Run `pylynx-new-project`
+8. Run `py example_script.py`
