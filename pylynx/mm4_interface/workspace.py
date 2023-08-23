@@ -176,6 +176,9 @@ def deploy_to_workspace(workspace_name):
     workspace_path = os.path.abspath(f"{MM4_data_path}\\{workspace_name}")
     method_path = os.path.join(workspace_path, "Methods", "universal_method.met")
     method_tree.write(method_path)
+    
+    add_method_variables(workspace_name)
+
 
 
 
