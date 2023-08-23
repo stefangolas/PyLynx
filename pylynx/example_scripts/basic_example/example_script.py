@@ -5,7 +5,7 @@ Created on Mon Aug  7 12:11:37 2023
 @author: stefa
 """
 
-from pylynx import LynxInterface, get_host_ip, ArrayVVP
+from pylynx import LynxInterface, get_host_ip, VVPArray
 import numpy as np
 import pandas as pd
 
@@ -13,7 +13,7 @@ import pandas as pd
 data = np.zeros((8, 12))
 data[:, :3] = 20
 df = pd.DataFrame(data)
-array = ArrayVVP(df)
+array = VVPArray(df)
 
 
 

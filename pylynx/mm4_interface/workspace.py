@@ -11,7 +11,8 @@ import xml.etree.ElementTree as ET
 from ..file_utils import universal_method_path, MM4_data_path, method_variables_path
 from .method_parser import commands_list
 
-generics = ['Go To Step','End If','If','Write To Output','Loop Until','String Builder', 'Begin Loop','Wait For Variable']
+generics = ['Go To Step','End If','If','Write To Output','Loop Until',
+            'Import Worktable','String Builder', 'Begin Loop','Wait For Variable']
 
 
 command_to_tool = lambda s: re.search(r'\((.*?)\)', s).group(1) if '(' in s else None

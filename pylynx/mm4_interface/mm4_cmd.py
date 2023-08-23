@@ -276,8 +276,16 @@ class LynxInterface:
         if self.simulating:
             self.wait_for_simulation_mode()
         self.watch_method_mm4()
+        self.workspace = self.get_workspace()
         self.start_method(self.method_name)
-
+    
+    def get_workspace(self):
+        ws = self.get_application_state()["Item"]
+        while not ws:
+            ws = self.get_application_state()["Item"]
+            time.sleep(1)
+        return ws
+    
     def wait_for_simulation_mode(self):
         print("Waiting for simulation mode before starting")
         simulation_mode = False
@@ -379,7 +387,7 @@ class LynxInterface:
             self.set_variable_mm4(field, mm4_cmd_dict[field])
             
         # Use the key (name of the command in MM4) to find the step number in the universal method
-        cmd_enum = command_enum(mm4_cmd_dict['cmd_key'])
+        cmd_enum = command_enum(mm4_cmd_dict['cmd_key'], self.workspace)
         
         
         self.set_variable_mm4('go_to_step', cmd_enum)
