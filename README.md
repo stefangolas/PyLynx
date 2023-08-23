@@ -102,3 +102,10 @@ lynx.eject_tips(tips = tips)
 6. Run `pylynx-configure <Workspace_name>`
 7. Run `pylynx-new-project`
 8. Run `py example_script.py`
+
+## Configuration
+The `pylynx-configure` tool modifies the universal method to be compatible with the chosen workspace in the following ways:
+* Delete worktable sides (e.g. Left, Right) that don't exist in the workspace
+* Delete commands that are not possible in the workspace
+* Delete resource locations that are not in the workspace
+The user must change `utf-16` to `utf-8` in the workspace worktable XML (e.g. `Lynx.Left.Worktable`) manually before running this tool
