@@ -99,9 +99,10 @@ lynx.eject_tips(tips = tips)
 3. Run `git clone https://github.com/stefangolas/PyLynx.git` from the command line
 4. Run `cd pylynx`
 5. Run `pip install -e .`
-6. Run `pylynx-configure <Workspace_name>`
-7. Run `pylynx-new-project`
-8. Run `py example_script.py`
+6. Set an environment variable called `MM4_DATA_PATH` to point to the directory containing your MM4 workspaces
+7. Run `pylynx-configure <Workspace_name>`
+8. Run `pylynx-new-project`
+9. Run `py example_script.py`
 
 ### Configuration Tool
 The `pylynx-configure` tool modifies the universal method to be compatible with the chosen workspace in the following ways:
