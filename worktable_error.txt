@@ -1,7 +1,0 @@
-There were errors creating the worktable resource map(s) for method 'universal_method.met'
-due to unknown labware resources, and it can not be loaded.
-     Worktable 'Left' holds plate type(s) that are not recognized:
-       Location 'Loc_01':
-         Labware category 'Plate' named '96 Well Plate' (Id 3a90930d-2346-4b0c-8c5a-e50eb805a582) and labeled 'plate_00'.
-       Location 'Loc_15':
-         Labware category 'Plate' named '96 Well Plate' (Id 3a90930d-2346-4b0c-8c5a-e50eb805a582) and labeled 'plate_01'.

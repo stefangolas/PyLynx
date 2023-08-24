@@ -199,6 +199,10 @@
                   <Simple type="System.String, mscorlib" value="load_tip_force" />
                 </Item>
                 <Item>
+                  <Simple value="plate" />
+                  <Simple type="System.String, mscorlib" value="tips_02" />
+                </Item>
+                <Item>
                   <Simple value="plateVariable" />
                   <Simple type="System.String, mscorlib" value="tip_box" />
                 </Item>
@@ -216,7 +220,7 @@
                 </Item>
                 <Item>
                   <Simple value="motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Tip Load" />
                 </Item>
                 <Item>
                   <Simple value="commandFlags" />
@@ -233,10 +237,6 @@
                 <Item>
                   <Simple value="collisionAvoidanceDisabled" />
                   <Simple type="System.Boolean, mscorlib" value="True" />
-                </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="1d04aba5-dc42-e044-e57e-311ff530b30f" />
                 </Item>
               </Items>
             </Dictionary>
@@ -285,6 +285,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -2446,6 +2450,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -2702,6 +2710,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -2767,6 +2779,10 @@
             <Dictionary name="Parameters">
               <Items>
                 <Item>
+                  <Simple value="plate" />
+                  <Simple type="System.String, mscorlib" value="tips_02" />
+                </Item>
+                <Item>
                   <Simple value="plateVariable" />
                   <Simple type="System.String, mscorlib" value="tip_box" />
                 </Item>
@@ -2788,7 +2804,7 @@
                 </Item>
                 <Item>
                   <Simple value="motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Tip Eject" />
                 </Item>
                 <Item>
                   <Simple value="commandFlags" />
@@ -2805,10 +2821,6 @@
                 <Item>
                   <Simple value="collisionAvoidanceDisabled" />
                   <Simple type="System.Boolean, mscorlib" value="True" />
-                </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="6ba4bf72-4115-3e40-0495-ad84983cf2e8" />
                 </Item>
               </Items>
             </Dictionary>
@@ -2857,6 +2869,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -3126,6 +3142,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -3258,6 +3278,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -3380,7 +3404,7 @@
                 </Item>
                 <Item>
                   <Simple value="motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Move Plate" />
                 </Item>
                 <Item>
                   <Simple value="commandFlags" />
@@ -3397,10 +3421,6 @@
                 <Item>
                   <Simple value="collisionAvoidanceDisabled" />
                   <Simple type="System.Boolean, mscorlib" value="True" />
-                </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="493d07da-aa32-1d66-4bdf-986be44c2292" />
                 </Item>
               </Items>
             </Dictionary>
@@ -3449,6 +3469,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -3536,7 +3560,7 @@
                 </Item>
                 <Item>
                   <Simple value="motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Move Plate" />
                 </Item>
                 <Item>
                   <Simple value="commandFlags" />
@@ -3553,10 +3577,6 @@
                 <Item>
                   <Simple value="collisionAvoidanceDisabled" />
                   <Simple type="System.Boolean, mscorlib" value="True" />
-                </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="209fc7a5-f0ac-fcb5-ac68-15c7a7edbfe9" />
                 </Item>
               </Items>
             </Dictionary>
@@ -3605,6 +3625,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -3826,6 +3850,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -3990,6 +4018,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -4124,7 +4156,7 @@
                 </Item>
                 <Item>
                   <Simple value="_motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Move Plate" />
                 </Item>
                 <Item>
                   <Simple value="_xOffsetVar" />
@@ -4178,10 +4210,6 @@
                   <Simple value="_speedProfileName" />
                   <Simple type="System.String, mscorlib" value="Gripper Speed" />
                 </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="5d1e7f27-922b-b6d2-9685-754e605cf117" />
-                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -4229,6 +4257,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -4308,7 +4340,7 @@
                 </Item>
                 <Item>
                   <Simple value="_motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Move Plate" />
                 </Item>
                 <Item>
                   <Simple value="_xOffsetVar" />
@@ -4362,10 +4394,6 @@
                   <Simple value="_speedProfileName" />
                   <Simple type="System.String, mscorlib" value="Gripper Speed" />
                 </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="00cfc47c-4c6b-e22a-96d4-fa6854115be6" />
-                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -4413,6 +4441,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -4544,7 +4576,7 @@
                 </Item>
                 <Item>
                   <Simple value="_motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Move Plate" />
                 </Item>
                 <Item>
                   <Simple value="_xOffsetVar" />
@@ -4598,10 +4630,6 @@
                   <Simple value="_speedProfileName" />
                   <Simple type="System.String, mscorlib" value="Gripper Speed" />
                 </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="e2bf6a1b-ff0e-e781-316f-d649fb271cc9" />
-                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -4649,6 +4677,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -4728,7 +4760,7 @@
                 </Item>
                 <Item>
                   <Simple value="_motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Move Plate" />
                 </Item>
                 <Item>
                   <Simple value="_xOffsetVar" />
@@ -4782,10 +4814,6 @@
                   <Simple value="_speedProfileName" />
                   <Simple type="System.String, mscorlib" value="Gripper Speed" />
                 </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="a7815d70-347a-1f77-e58a-3c11d3ae1e88" />
-                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -4833,6 +4861,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -4964,7 +4996,7 @@
                 </Item>
                 <Item>
                   <Simple value="_motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Get Plate" />
                 </Item>
                 <Item>
                   <Simple value="_xOffsetVar" />
@@ -5018,10 +5050,6 @@
                   <Simple value="_speedProfileName" />
                   <Simple type="System.String, mscorlib" value="Gripper Speed" />
                 </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="9cf54ad4-c5e8-5f4b-888e-a6d7c51025ac" />
-                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -5069,6 +5097,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -5148,7 +5180,7 @@
                 </Item>
                 <Item>
                   <Simple value="_motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Get Plate" />
                 </Item>
                 <Item>
                   <Simple value="_xOffsetVar" />
@@ -5202,10 +5234,6 @@
                   <Simple value="_speedProfileName" />
                   <Simple type="System.String, mscorlib" value="Gripper Speed" />
                 </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="020258c3-a07c-e7e3-1956-19fae7eb63ac" />
-                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -5253,6 +5281,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -5388,7 +5420,7 @@
                 </Item>
                 <Item>
                   <Simple value="_motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Get Plate" />
                 </Item>
                 <Item>
                   <Simple value="_xOffsetVar" />
@@ -5442,10 +5474,6 @@
                   <Simple value="_speedProfileName" />
                   <Simple type="System.String, mscorlib" value="Gripper Speed" />
                 </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="5fe3915b-370f-1457-6d7c-37f75d05c9c0" />
-                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -5493,6 +5521,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -5576,7 +5608,7 @@
                 </Item>
                 <Item>
                   <Simple value="_motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Get Plate" />
                 </Item>
                 <Item>
                   <Simple value="_xOffsetVar" />
@@ -5630,10 +5662,6 @@
                   <Simple value="_speedProfileName" />
                   <Simple type="System.String, mscorlib" value="Gripper Speed" />
                 </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="bcc4f7d5-e04e-b570-d3f4-8ba6018d5a6b" />
-                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -5681,6 +5709,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -5816,7 +5848,7 @@
                 </Item>
                 <Item>
                   <Simple value="_motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Move Plate" />
                 </Item>
                 <Item>
                   <Simple value="_xOffsetVar" />
@@ -5870,10 +5902,6 @@
                   <Simple value="_speedProfileName" />
                   <Simple type="System.String, mscorlib" value="Gripper Speed" />
                 </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="381f061d-3224-64b0-0c9c-95b7caae2bc3" />
-                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -5921,6 +5949,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -6004,7 +6036,7 @@
                 </Item>
                 <Item>
                   <Simple value="_motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Move Plate" />
                 </Item>
                 <Item>
                   <Simple value="_usePreviousOffset" />
@@ -6049,10 +6081,6 @@
                 <Item>
                   <Simple value="_speedProfileName" />
                   <Simple type="System.String, mscorlib" value="Gripper Speed" />
-                </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="2ae269c2-8fe9-92a9-1385-ec63d3cadb44" />
                 </Item>
               </Items>
             </Dictionary>
@@ -6101,6 +6129,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -6342,6 +6374,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -6530,6 +6566,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -6611,14 +6651,6 @@
             <Dictionary name="Parameters">
               <Items>
                 <Item>
-                  <Simple value="A01.volumeVariable" />
-                  <Simple type="System.String, mscorlib" value="asp_384SV_vol" />
-                </Item>
-                <Item>
-                  <Simple value="A01.leadingAirGapVariable" />
-                  <Simple type="System.String, mscorlib" value="asp_384SV_pre_airgap" />
-                </Item>
-                <Item>
                   <Simple value="A01.trailingAirGapVariable" />
                   <Simple type="System.String, mscorlib" value="asp_384SV_post_airgap" />
                 </Item>
@@ -6637,6 +6669,14 @@
                 <Item>
                   <Simple value="A01.enable" />
                   <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="A01.volumeVariable" />
+                  <Simple type="System.String, mscorlib" value="asp_384SV_vol" />
+                </Item>
+                <Item>
+                  <Simple value="A01.leadingAirGapVariable" />
+                  <Simple type="System.String, mscorlib" value="asp_384SV_pre_airgap" />
                 </Item>
                 <Item>
                   <Simple value="flowrateOrPressure" />
@@ -6822,6 +6862,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -6886,30 +6930,6 @@
             <Simple name="Enabled" value="True" />
             <Dictionary name="Parameters">
               <Items>
-                <Item>
-                  <Simple value="A01.volumeVariable" />
-                  <Simple type="System.String, mscorlib" value="disp_vol" />
-                </Item>
-                <Item>
-                  <Simple value="A01.trailingAirGapVariable" />
-                  <Simple type="System.String, mscorlib" value="disp_airgap" />
-                </Item>
-                <Item>
-                  <Simple value="A01.clogErrorAction" />
-                  <Simple type="System.String, mscorlib" value="Off" />
-                </Item>
-                <Item>
-                  <Simple value="A01.shortSampleErrorAction" />
-                  <Simple type="System.String, mscorlib" value="Off" />
-                </Item>
-                <Item>
-                  <Simple value="A01.flags" />
-                  <Simple type="System.Byte, mscorlib" value="0" />
-                </Item>
-                <Item>
-                  <Simple value="A01.enable" />
-                  <Simple type="System.Boolean, mscorlib" value="True" />
-                </Item>
                 <Item>
                   <Simple value="flowrateOrPressure" />
                   <Simple type="System.String, mscorlib" value="Normal - 10ul/s" />
@@ -7043,6 +7063,30 @@
                   <Simple type="System.Boolean, mscorlib" value="True" />
                 </Item>
                 <Item>
+                  <Simple value="A01.trailingAirGapVariable" />
+                  <Simple type="System.String, mscorlib" value="disp_airgap" />
+                </Item>
+                <Item>
+                  <Simple value="A01.clogErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A01.shortSampleErrorAction" />
+                  <Simple type="System.String, mscorlib" value="Off" />
+                </Item>
+                <Item>
+                  <Simple value="A01.flags" />
+                  <Simple type="System.Byte, mscorlib" value="0" />
+                </Item>
+                <Item>
+                  <Simple value="A01.enable" />
+                  <Simple type="System.Boolean, mscorlib" value="True" />
+                </Item>
+                <Item>
+                  <Simple value="A01.volumeVariable" />
+                  <Simple type="System.String, mscorlib" value="disp_vol" />
+                </Item>
+                <Item>
                   <Simple value="VID" />
                   <Simple type="System.Guid, mscorlib" value="41295973-2af7-9392-abc0-ff4b84179ffd" />
                 </Item>
@@ -7093,6 +7137,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -7188,7 +7236,7 @@
                 </Item>
                 <Item>
                   <Simple value="motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Tip Load" />
                 </Item>
                 <Item>
                   <Simple value="commandFlags" />
@@ -7205,10 +7253,6 @@
                 <Item>
                   <Simple value="collisionAvoidanceDisabled" />
                   <Simple type="System.Boolean, mscorlib" value="True" />
-                </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="b10cb301-f7c9-2e40-d860-077689d3de31" />
                 </Item>
               </Items>
             </Dictionary>
@@ -7257,6 +7301,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -7323,6 +7371,10 @@
             <Dictionary name="Parameters">
               <Items>
                 <Item>
+                  <Simple value="plate" />
+                  <Simple type="System.String, mscorlib" value="tips_04" />
+                </Item>
+                <Item>
                   <Simple value="plateVariable" />
                   <Simple type="System.String, mscorlib" value="tip_box" />
                 </Item>
@@ -7344,7 +7396,7 @@
                 </Item>
                 <Item>
                   <Simple value="motionProfileName" />
-                  <Simple type="System.String, mscorlib" value="Mid Speed" />
+                  <Simple type="System.String, mscorlib" value="Tip Eject" />
                 </Item>
                 <Item>
                   <Simple value="commandFlags" />
@@ -7361,10 +7413,6 @@
                 <Item>
                   <Simple value="collisionAvoidanceDisabled" />
                   <Simple type="System.Boolean, mscorlib" value="True" />
-                </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="b64bba39-e1c9-1e41-e1ec-918380c555b7" />
                 </Item>
               </Items>
             </Dictionary>
@@ -7413,6 +7461,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -7522,7 +7574,17 @@
                       <Properties>
                         <Simple name="Capacity" value="4" />
                       </Properties>
-                      <Items />
+                      <Items>
+                        <Complex>
+                          <Properties>
+                            <Simple name="Name" value="plate_00" />
+                            <Simple name="BarcodeId" value="" />
+                            <Simple name="LabwareName" value="96 Well Plate" />
+                            <Simple name="LabwareId" value="3a90930d-2346-4b0c-8c5a-e50eb805a582" />
+                            <Simple name="Category" value="Plate" />
+                          </Properties>
+                        </Complex>
+                      </Items>
                     </Collection>
                     <Simple name="LocationName" value="Loc_01" />
                   </Properties>
@@ -7686,7 +7748,17 @@
                       <Properties>
                         <Simple name="Capacity" value="4" />
                       </Properties>
-                      <Items />
+                      <Items>
+                        <Complex>
+                          <Properties>
+                            <Simple name="Name" value="plate_01" />
+                            <Simple name="BarcodeId" value="" />
+                            <Simple name="LabwareName" value="96 Well Plate" />
+                            <Simple name="LabwareId" value="3a90930d-2346-4b0c-8c5a-e50eb805a582" />
+                            <Simple name="Category" value="Plate" />
+                          </Properties>
+                        </Complex>
+                      </Items>
                     </Collection>
                     <Simple name="LocationName" value="Loc_15" />
                   </Properties>
@@ -7839,7 +7911,17 @@
                       <Properties>
                         <Simple name="Capacity" value="4" />
                       </Properties>
-                      <Items />
+                      <Items>
+                        <Complex>
+                          <Properties>
+                            <Simple name="Name" value="plate_0" />
+                            <Simple name="BarcodeId" value="" />
+                            <Simple name="LabwareName" value="96 Well Plate" />
+                            <Simple name="LabwareId" value="3a90930d-2346-4b0c-8c5a-e50eb805a582" />
+                            <Simple name="Category" value="Plate" />
+                          </Properties>
+                        </Complex>
+                      </Items>
                     </Collection>
                     <Simple name="LocationName" value="Loc_28" />
                   </Properties>
