@@ -275,6 +275,8 @@ class LynxInterface:
         time.sleep(3) # Needed to wait before pinging server
         if self.simulating:
             self.wait_for_simulation_mode()
+        else:
+            self.wait_for_hardware_initialize()
         self.watch_method_mm4()
         self.workspace = self.get_workspace()
         self.start_method(self.method_name)
@@ -294,6 +296,13 @@ class LynxInterface:
             simulation_mode = r['ApplicationState'] == 3 or r['ApplicationState'] == 131
             time.sleep(1)
 
+    def wait_for_hardware_initialize(self):
+        initialized = False
+        while not initialized:
+            r = self.get_application_state()
+            initialized = r['ApplicationState'] == 129
+            time.sleep(1)
+            
     def send_packet(self, payload):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         try:
