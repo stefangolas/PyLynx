@@ -106,7 +106,8 @@ lynx.eject_tips(tips = tips)
 
 ### Common Errors:
 
-**"pip is not recognized as an internal or external command"** See this stack overflow answer: https://stackoverflow.com/a/23709194
+**"pip is not recognized as an internal or external command"** </br>
+See this stack overflow answer: https://stackoverflow.com/a/23709194
 
 ### Configuration Tool
 The `pylynx-configure` tool modifies the universal method to be compatible with the chosen workspace in the following ways:
