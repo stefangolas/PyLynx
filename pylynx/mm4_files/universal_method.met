@@ -7654,17 +7654,7 @@
                       <Properties>
                         <Simple name="Capacity" value="4" />
                       </Properties>
-                      <Items>
-                        <Complex>
-                          <Properties>
-                            <Simple name="Name" value="tips_02" />
-                            <Simple name="BarcodeId" value="" />
-                            <Simple name="LabwareName" value="LXB-96-1250NF" />
-                            <Simple name="LabwareId" value="596a4aa5-70b4-46fb-8f5a-1d9f45e1947e" />
-                            <Simple name="Category" value="Tipbox" />
-                          </Properties>
-                        </Complex>
-                      </Items>
+                      <Items />
                     </Collection>
                     <Simple name="LocationName" value="Loc_13" />
                   </Properties>
@@ -7730,17 +7720,7 @@
                       <Properties>
                         <Simple name="Capacity" value="4" />
                       </Properties>
-                      <Items>
-                        <Complex>
-                          <Properties>
-                            <Simple name="Name" value="tips_01" />
-                            <Simple name="BarcodeId" value="" />
-                            <Simple name="LabwareName" value="LXB-96-950F" />
-                            <Simple name="LabwareId" value="3fde9f70-3019-47a0-b958-72a20d990530" />
-                            <Simple name="Category" value="Tipbox" />
-                          </Properties>
-                        </Complex>
-                      </Items>
+                      <Items />
                     </Collection>
                     <Simple name="LocationName" value="Loc_19" />
                   </Properties>
@@ -7861,17 +7841,7 @@
                       <Properties>
                         <Simple name="Capacity" value="4" />
                       </Properties>
-                      <Items>
-                        <Complex>
-                          <Properties>
-                            <Simple name="Name" value="tips_03" />
-                            <Simple name="BarcodeId" value="" />
-                            <Simple name="LabwareName" value="LXB-96-950F" />
-                            <Simple name="LabwareId" value="3fde9f70-3019-47a0-b958-72a20d990530" />
-                            <Simple name="Category" value="Tipbox" />
-                          </Properties>
-                        </Complex>
-                      </Items>
+                      <Items />
                     </Collection>
                     <Simple name="LocationName" value="Loc_30" />
                   </Properties>

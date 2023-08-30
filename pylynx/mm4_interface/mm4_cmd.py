@@ -272,7 +272,7 @@ class LynxInterface:
             self.get_application_state() # Check if MM4 is open before trying to open it again
         except ConnectionRefusedError:
             subprocess.Popen([mm4_exe])
-        time.sleep(3) # Needed to wait before pinging server
+        time.sleep(5) # Needed to wait before pinging server
         if self.simulating:
             self.wait_for_simulation_mode()
         else:

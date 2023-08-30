@@ -7,6 +7,9 @@ Created on Tue Aug 15 13:54:18 2023
 
 from setuptools import setup, find_packages
 
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
+
 
 setup(
     name='pylynx',
@@ -23,4 +26,5 @@ setup(
             'pylynx-configure = pylynx.auto_configure:auto_configure'
         ],
     },
+    install_requires = requirements
 )
