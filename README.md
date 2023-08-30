@@ -104,6 +104,10 @@ lynx.eject_tips(tips = tips)
 8. Run `pylynx-new-project`
 9. Run `py example_script.py`
 
+### Common Errors:
+
+**"pip is not recognized as an internal or external command"** See this stack overflow answer: https://stackoverflow.com/a/23709194
+
 ### Configuration Tool
 The `pylynx-configure` tool modifies the universal method to be compatible with the chosen workspace in the following ways:
 * Delete method worktable sides (e.g. Left, Right) that don't exist in the workspace
