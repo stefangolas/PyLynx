@@ -457,9 +457,8 @@ class LynxInterface:
 
 #---- MM4 Commands ------------------------------------------------------------#
     def load_tips(self, tips: Labware):
-        assert tips.resource_type == 'Tipbox', 'Eject location must be type tipbox'
 
-        params_dict = {'tip_box': tips.name}
+        params_dict = {'tip_box': tips}
 
         cmd = load_tips_template.apply_cmd_params(params_dict)
 
@@ -468,7 +467,7 @@ class LynxInterface:
     def aspirate_96_vvp(self, plate: Labware, array: VVPArray):
         channel_data = array.convert_to_cmd_data()
 
-        params_dict = {'asp_plate': plate.name,
+        params_dict = {'asp_plate': plate,
                        'asp_data': channel_data}
 
         cmd = aspirate_vvp_template.apply_cmd_params(params_dict)
@@ -481,7 +480,7 @@ class LynxInterface:
 
         channel_data = array.convert_to_cmd_data()
 
-        params_dict = {'disp_plate': plate.name,
+        params_dict = {'disp_plate': plate,
                        'disp_data': channel_data}
 
         cmd = dispense_vvp_template.apply_cmd_params(params_dict)
@@ -500,10 +499,9 @@ class LynxInterface:
         self.send_command(cmd)
 
     def eject_tips(self, tips: Labware):
-        assert tips.resource_type == 'Tipbox', 'Eject location must be type tipbox'
 
         params_dict = {
-            'tip_box': tips.name
+            'tip_box': tips
         }
 
         cmd = eject_tips_template.apply_cmd_params(params_dict)

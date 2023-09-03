@@ -93,6 +93,8 @@ def get_worktable_locations(workspace_name, side):
     workspace_worktable = ET.parse(f"{MM4_data_path}\\{workspace_name}\\Configuration\\Lynx.{side}.Worktable.config")
     ws = workspace_worktable.getroot()
     ws_locs = [name.text for name in ws.findall(".//Name")]
+    ws_locs = [loc for loc in ws_locs if "WORKTABLESOURCETAG" not in loc]
+
     return ws_locs
 
 
