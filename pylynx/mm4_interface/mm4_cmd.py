@@ -10,8 +10,9 @@ import json
 import string
 import time
 import subprocess
+import functools
 
-from .mm4_errors import mm4_errors_dict
+from .mm4_errors import mm4_errors_dict, MM4Exception
 from .worktable import Worktable, Labware
 from .configure_server import get_host_ip
 from .method_parser import command_enum
@@ -22,6 +23,24 @@ mm4_exe = 'C:\\Program Files (x86)\\Dynamic Devices\\MethodManager4\\MethodManag
 
 num_rows = 8
 num_cols = 12
+
+
+import functools
+
+def retry_on_exception():
+    def decorator(func):
+        @functools.wraps(func)
+        def wrapper(*args, **kwargs):
+            attempts = 0
+            while True:
+                try:
+                    result = func(*args, **kwargs)
+                    return result
+                except MM4Exception as e:
+                    print("Exception caught: " + e)
+                    input("Type y and press enter to retry the last command")
+        return wrapper
+    return decorator
 
 
 class MM4Command:
@@ -320,7 +339,7 @@ class LynxInterface:
 
     def check_response(self, r):
         if r["Error"] != 0:
-            raise Exception(mm4_errors_dict[r["Error"]])
+            raise MM4Exception(mm4_errors_dict[r["Error"]])
 
 
 #------ API Calls ------------------------------------------------------------#
@@ -456,6 +475,7 @@ class LynxInterface:
         return cmd
 
 #---- MM4 Commands ------------------------------------------------------------#
+    @retry_on_exception    
     def load_tips(self, tips: Labware):
 
         params_dict = {'tip_box': tips}
@@ -464,6 +484,7 @@ class LynxInterface:
 
         self.send_command(cmd)
 
+    @retry_on_exception    
     def aspirate_96_vvp(self, plate: Labware, array: VVPArray):
         channel_data = array.convert_to_cmd_data()
 
@@ -475,7 +496,8 @@ class LynxInterface:
         self.send_command(cmd)
         response = self.get_variable_mm4('Lynx.VVP96.Aspirate.Output')["Result"]
         return response
-
+    
+    @retry_on_exception    
     def dispense_96_vvp(self, plate: Labware, array: VVPArray):
 
         channel_data = array.convert_to_cmd_data()
@@ -489,7 +511,7 @@ class LynxInterface:
         response = self.get_variable_mm4('Lynx.VVP96.Dispense.Output')["Result"]
         return response
 
-
+    @retry_on_exception    
     def mix_96_vvp(self, plate, mix_data, mix_cycles, blowout_vol, **kwargs):
         cmd = self.command_builder(mix_vvp_template,
                                    mix_plate=plate,
@@ -498,6 +520,7 @@ class LynxInterface:
                                    **kwargs)
         self.send_command(cmd)
 
+    @retry_on_exception
     def eject_tips(self, tips: Labware):
 
         params_dict = {
@@ -508,6 +531,7 @@ class LynxInterface:
 
         self.send_command(cmd)
 
+    @retry_on_exception
     def load_worktable(self, worktable_file):
         params_dict = {
             'worktable_filename': worktable_file
@@ -519,6 +543,7 @@ class LynxInterface:
         worktable = Worktable(worktable_file)
         return worktable
 
+    @retry_on_exception
     def gripper_move_to_location(self, location, gripper_side, **kwargs):
 
         params_dict = {
@@ -533,6 +558,7 @@ class LynxInterface:
         cmd = gripper_move_to_location_template.apply_cmd_params(params_dict)
         self.send_command(cmd)
 
+    @retry_on_exception
     def gripper_move_plate(self, source, destination, gripper_side, **kwargs):
         cmd = self.command_builder(gripper_move_plate_template,
                                    gripper_move_plate_source = source,
@@ -543,6 +569,7 @@ class LynxInterface:
         
         self.send_command(cmd)
 
+    @retry_on_exception
     def gripper_move_to_plate(self, location, gripper_side, **kwargs):
         cmd = self.command_builder(gripper_move_to_plate_template,
                                    gripper_move_location=location,
@@ -552,6 +579,7 @@ class LynxInterface:
         
         self.send_command(cmd)
 
+    @retry_on_exception    
     def gripper_move_lid(self, location, gripper_side, **kwargs):
         cmd = self.command_builder(gripper_move_lid_template,
                                    gripper_put_plate=location,
@@ -561,6 +589,7 @@ class LynxInterface:
         
         self.send_command(cmd)
 
+    @retry_on_exception 
     def aspirate_sv(self, plate, row, column, vol, **kwargs):
         cmd = self.command_builder(aspirate_sv_template,
                                    asp_plate=plate,
@@ -570,7 +599,8 @@ class LynxInterface:
                                    **kwargs)
         
         self.send_command(cmd)
-
+    
+    @retry_on_exception 
     def dispense_sv(self, plate, row, column, vol, **kwargs):
         cmd = self.command_builder(dispense_sv_template,
                                    disp_plate=plate,
@@ -579,7 +609,8 @@ class LynxInterface:
                                    disp_vol=vol,
                                    **kwargs)
         self.send_command(cmd)
-
+    
+    @retry_on_exception 
     def tip_pickup_sv(self, tip_box, column, row, **kwargs):
         cmd = self.command_builder(tip_pickup_sv_template,
                                    tip_box=tip_box,
@@ -588,6 +619,7 @@ class LynxInterface:
                                    **kwargs)
         self.send_command(cmd)
 
+    @retry_on_exception 
     def tip_eject_sv(self, tip_box, column, row, **kwargs):
         cmd = self.command_builder(tip_eject_sv_template,
                                    tip_box=tip_box,

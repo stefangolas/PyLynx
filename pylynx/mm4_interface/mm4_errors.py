@@ -5,6 +5,72 @@ Created on Sat Jun 24 10:57:10 2023
 @author: stefa
 """
 
+class MM4Exception(Exception):
+    pass
+
+class NoWorkspace(MM4Exception):
+    pass
+
+class ApplicationBlocked(MM4Exception):
+    pass
+
+class EstopEngaged(MM4Exception):
+    pass
+
+class PermissionLevelNotUser(MM4Exception):
+    pass
+
+class MethodPermissionNotUser(MM4Exception):
+    pass
+
+class DevicesNotReady(MM4Exception):
+    pass
+
+class NotExecutionMode(MM4Exception):
+    pass
+
+class MethodAlreadyRunning(MM4Exception):
+    pass
+
+class UnknownVariable(MM4Exception):
+    pass
+
+class VariableIsReadOnly(MM4Exception):
+    pass
+
+class UnknownDevice(MM4Exception):
+    pass
+
+class UnknownWorktable(MM4Exception):
+    pass
+
+class UnknownQuery(MM4Exception):
+    pass
+
+class UnknownInput(MM4Exception):
+    pass
+
+class UnknownMethod(MM4Exception):
+    pass
+
+class PasswordNotValid(MM4Exception):
+    pass
+
+class NoMethodRunning(MM4Exception):
+    pass
+
+class CommandFormatNotRecognized(MM4Exception):
+    pass
+
+class ApplicationError(MM4Exception):
+    pass
+
+class ClientSideError(MM4Exception):
+    pass
+
+class SubMethodOnly(MM4Exception):
+    pass
+
 mm4_errors_dict = {
     1:"No Workspace",
     2:"Application Blocked",
