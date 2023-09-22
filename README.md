@@ -121,7 +121,7 @@ lynx.tip_eject_sv('tips_1', row = 2, column = 5)
 **"pip is not recognized as an internal or external command"** </br>
 See this stack overflow answer: https://stackoverflow.com/a/23709194
 
-**"Errors relating to pip installing pandas"** </br>
+**Errors relating to pip installing pandas** </br>
 Try running `pip install pandas==2.0.0`
 
 ### Configuration Tool
