@@ -134,7 +134,16 @@ def set_worktable_capacity(workspace_name, method_tree):
             method_stacks.remove(stack)
 
     return method_tree
-            
+
+def clear_method_variables(workspace_name):
+    workspace_variables_path = f"{MM4_data_path}\\{workspace_name}\\WorkspaceVariables.config"
+    tree = ET.parse(workspace_variables_path)
+    workspace_vars_root = tree.getroot()
+    variables = workspace_vars_root.find(".//Variables")
+    for v in variables:
+        v.find(".//Value").text = None
+    tree.write(workspace_variables_path)
+        
 def list_workspace_vars(workspace_vars_root):
     variables = workspace_vars_root.find(".//Variables")
     list_of_vars = []

@@ -11,13 +11,15 @@ import string
 import time
 import subprocess
 import functools
+import pdb
+import sys
 
 from .mm4_errors import mm4_errors_dict, MM4Exception
 from .worktable import Worktable, Labware
 from .configure_server import get_host_ip
 from .method_parser import command_enum
 from .vvp import VVPArray
-
+from .workspace import clear_method_variables
 
 mm4_exe = 'C:\\Program Files (x86)\\Dynamic Devices\\MethodManager4\\MethodManager.DX.exe'
 
@@ -25,22 +27,24 @@ num_rows = 8
 num_cols = 12
 
 
-import functools
 
-def retry_on_exception():
-    def decorator(func):
+def retry_on_exception(func):
         @functools.wraps(func)
         def wrapper(*args, **kwargs):
-            attempts = 0
             while True:
                 try:
                     result = func(*args, **kwargs)
                     return result
                 except MM4Exception as e:
-                    print("Exception caught: " + e)
-                    input("Type y and press enter to retry the last command")
+                    print("Exception caught: " + str(e))
+                    retry_input = input("Enter 'y' to retry or 'd' to enter debugger. Enter any other key to exit: ")
+                    if retry_input.lower() not in ['y','d']:
+                        break
+                    if retry_input.lower() == 'd':
+                        lynx = args[0]
+                        breakpoint()
         return wrapper
-    return decorator
+
 
 
 class MM4Command:
@@ -167,7 +171,6 @@ gripper_move_plate_template = MM4Command(cmd_name='cmd_gripper_move_plate',
                                          })
 
 gripper_move_lid_template = MM4Command(cmd_name='cmd_gripper_move_lid',
-                                       #cmd_key='Aspirate(VVP96)',
                                        default_params={
                                            'gripper_move_plate_source': None,
                                            'gripper_move_plate_destination': None,
@@ -182,7 +185,6 @@ gripper_move_lid_template = MM4Command(cmd_name='cmd_gripper_move_lid',
                                        })
 
 gripper_put_plate_template = MM4Command(cmd_name='cmd_gripper_put_plate',
-                                        #cmd_key='Aspirate(VVP96)',
                                         default_params={
                                             'gripper_move_side': None,
                                             'gripper_put_plate': None,
@@ -286,7 +288,8 @@ class LynxInterface:
         self.password = 'Remote'
         self.method_name = 'universal_method'
 
-    def setup(self):
+    def setup(self, workspace):
+        clear_method_variables(workspace)
         try:
             self.get_application_state() # Check if MM4 is open before trying to open it again
         except ConnectionRefusedError:
@@ -298,6 +301,7 @@ class LynxInterface:
             self.wait_for_hardware_initialize()
         self.watch_method_mm4()
         self.workspace = self.get_workspace()
+        self.set_variable_mm4("start_method", "1")
         self.start_method(self.method_name)
     
     def get_workspace(self):
@@ -445,7 +449,7 @@ class LynxInterface:
 
     def ensure_active_method(self, r):
         if r['MethodState'] == 4:
-            raise Exception(
+            raise MM4Exception(
                 "Method encountered an error. Check the logs for more information.")
         if r['MethodState'] == 1:
             raise Exception("No method running.")
@@ -484,7 +488,7 @@ class LynxInterface:
 
         self.send_command(cmd)
 
-    @retry_on_exception    
+    @retry_on_exception 
     def aspirate_96_vvp(self, plate: Labware, array: VVPArray):
         channel_data = array.convert_to_cmd_data()
 

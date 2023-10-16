@@ -17,8 +17,8 @@ df = pd.DataFrame(data)
 array = VVPArray(df)
 
 worktable = MethodWorktable("Demo Workspace")
-
 worktable.clear_worktable()
+
 list_labware("Demo Workspace")
 worktable.add_labware_to_location("tips_1", "LXB-96-950F", "Loc_02")
 worktable.add_labware_to_location("plate_1", "96 Well Plate", "Loc_04")
@@ -29,7 +29,7 @@ worktable.save_worktable()
 ip = get_host_ip()
 lynx = LynxInterface(ip=ip, port=47000, simulating=True)
 
-lynx.setup()
+lynx.setup(workspace = "Demo Workspace")
 
 
 lynx.load_tips(tips="tips_1")

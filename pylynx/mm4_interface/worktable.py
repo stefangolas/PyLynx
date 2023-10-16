@@ -13,6 +13,8 @@ from ..file_utils import universal_method_path, MM4_data_path, method_variables_
 from .method_parser import commands_list
 from .workspace import get_worktable_locations, resource_stacks_xpath
 
+
+
 def append_tipboxes(labware_root):
     xml_files = glob.glob(os.path.join(f"{MM4_data_path}\\Labware", '*Tipbox*.config'))
 
@@ -32,6 +34,7 @@ def list_labware(workspace_name):
     labware = [el.find(".//Name").text for el in labware_root]
     
     return labware
+
 
 def get_labware_data(workspace_name, labware_name):
     labware_tree = ET.parse(f"{MM4_data_path}\\{workspace_name}\\User.Labware.config")
@@ -89,11 +92,11 @@ class MethodWorktable:
         return complex_node
     
     
-    def add_labware_to_location(self, name, labware_name, location, barcode = ""):
+    def add_labware_to_location(self, name, labware_name, location, barcode = "", side = "Left"):
         
         loc_node = self.get_location_by_name(location)
         if not loc_node:
-            locations = get_worktable_locations(self.workspace_name, "Left")
+            locations = get_worktable_locations(self.workspace_name, side)
             raise Exception(f"""Location {location }not found, please select from the 
                             following locations:\n{locations}""")
                             
