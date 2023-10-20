@@ -24,7 +24,7 @@
                 </Item>
                 <Item>
                   <Simple value="_compareWith" />
-                  <Simple type="System.String, mscorlib" value="0" />
+                  <Simple type="System.String, mscorlib" value="1" />
                 </Item>
                 <Item>
                   <Simple value="_compareWithVariable" />
@@ -41,10 +41,6 @@
                 <Item>
                   <Simple value="_errorOnTimeout" />
                   <Simple type="System.Boolean, mscorlib" value="False" />
-                </Item>
-                <Item>
-                  <Simple value="VID" />
-                  <Simple type="System.Guid, mscorlib" value="62f22693-1d98-4546-9661-35b35a3f246e" />
                 </Item>
               </Items>
             </Dictionary>
@@ -285,6 +281,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -2446,6 +2446,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -2702,6 +2706,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -2857,6 +2865,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -3126,6 +3138,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -3257,6 +3273,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -3450,6 +3470,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -3605,6 +3629,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -3826,6 +3854,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -3989,6 +4021,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -4230,6 +4266,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -4413,6 +4453,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -4650,6 +4694,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -4833,6 +4881,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -5070,6 +5122,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -5253,6 +5309,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -5494,6 +5554,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -5681,6 +5745,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -5922,6 +5990,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -6101,6 +6173,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -6342,6 +6418,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -6529,6 +6609,10 @@
                 <Item>
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
+                </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
                 </Item>
               </Items>
             </Dictionary>
@@ -6822,6 +6906,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -7094,6 +7182,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -7258,6 +7350,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -7414,6 +7510,10 @@
                   <Simple value="TargetStepVariable" />
                   <Simple type="System.String, mscorlib" value="" />
                 </Item>
+                <Item>
+                  <Simple value="VID" />
+                  <Simple type="System.Guid, mscorlib" value="e4119c3d-b767-4711-b7a3-968fa667c2fd" />
+                </Item>
               </Items>
             </Dictionary>
           </Properties>
@@ -7531,9 +7631,19 @@
                   <Properties>
                     <Collection name="LabwareStackElems">
                       <Properties>
-                        <Simple name="Capacity" value="0" />
+                        <Simple name="Capacity" value="4" />
                       </Properties>
-                      <Items />
+                      <Items>
+                        <Complex>
+                          <Properties>
+                            <Simple name="Name" value="tips_1" />
+                            <Simple name="BarcodeId" value="" />
+                            <Simple name="LabwareName" value="LXB-96-950F" />
+                            <Simple name="LabwareId" value="3fde9f70-3019-47a0-b958-72a20d990530" />
+                            <Simple name="Category" value="Tipbox" />
+                          </Properties>
+                        </Complex>
+                      </Items>
                     </Collection>
                     <Simple name="LocationName" value="Loc_02" />
                   </Properties>
@@ -7553,9 +7663,19 @@
                   <Properties>
                     <Collection name="LabwareStackElems">
                       <Properties>
-                        <Simple name="Capacity" value="0" />
+                        <Simple name="Capacity" value="4" />
                       </Properties>
-                      <Items />
+                      <Items>
+                        <Complex>
+                          <Properties>
+                            <Simple name="Name" value="plate_1" />
+                            <Simple name="BarcodeId" value="" />
+                            <Simple name="LabwareName" value="96 Well Plate" />
+                            <Simple name="LabwareId" value="3a90930d-2346-4b0c-8c5a-e50eb805a582" />
+                            <Simple name="Category" value="Plate" />
+                          </Properties>
+                        </Complex>
+                      </Items>
                     </Collection>
                     <Simple name="LocationName" value="Loc_04" />
                   </Properties>
@@ -7577,7 +7697,17 @@
                       <Properties>
                         <Simple name="Capacity" value="4" />
                       </Properties>
-                      <Items />
+                      <Items>
+                        <Complex>
+                          <Properties>
+                            <Simple name="Name" value="plate_2" />
+                            <Simple name="BarcodeId" value="" />
+                            <Simple name="LabwareName" value="96 Well Plate" />
+                            <Simple name="LabwareId" value="3a90930d-2346-4b0c-8c5a-e50eb805a582" />
+                            <Simple name="Category" value="Plate" />
+                          </Properties>
+                        </Complex>
+                      </Items>
                     </Collection>
                     <Simple name="LocationName" value="Loc_06" />
                   </Properties>
