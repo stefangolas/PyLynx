@@ -8,4 +8,5 @@ pylynx.egg-info/PKG-INFO
 pylynx.egg-info/SOURCES.txt
 pylynx.egg-info/dependency_links.txt
 pylynx.egg-info/entry_points.txt
+pylynx.egg-info/requires.txt
 pylynx.egg-info/top_level.txt

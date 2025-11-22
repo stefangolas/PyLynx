@@ -88,7 +88,48 @@ def remove_incompatible_commands(workspace_name, method_tree):
         steps_node.remove(step)
     
     return method_tree
+
+def map_method_locations(method_tree, workspace_name):
+    """
+    Replaces the generic LocationName values in the method XML with the
+    physical location names found in the workspace's .Worktable.config file.
+    
+    This fixes the incompatibility between the method's hardcoded locations
+    and the actual physical deck names (e.g., 'SCILA_01', 'Vspin') used
+    in the configuration files.
+    """
+    method_root = method_tree.getroot()
+    method_worktables = method_root.find(method_worktables_xpath)
+
+    for wt in method_worktables:
+        method_wt_side = get_worktable_side(wt)
         
+        # 1. Get the list of actual physical location names for this side
+        physical_loc_names = get_worktable_locations(workspace_name, method_wt_side)
+        
+        # 2. Get the resource stacks (locations) defined in the method XML
+        method_stacks = wt.find(resource_stacks_xpath)
+
+        # 3. Create a mapping for substitution: Map the method's generic index to the physical name
+        # We assume the index order in the method file corresponds to the order in the config file.
+        
+        # The list comprehension ensures we only map as many locations as are defined in both files,
+        # preventing an IndexError if one list is shorter than the other.
+        mapping_count = min(len(method_stacks), len(physical_loc_names))
+        
+        # This list of tuples is the key: [(<Complex element>, 'SCILA_01'), ...]
+        update_list = zip(method_stacks[:mapping_count], physical_loc_names[:mapping_count])
+        
+        for stack_node, physical_name in update_list:
+            # Find the Simple element containing the LocationName
+            location_name_node = stack_node.find(stack_name_xpath)
+            
+            if location_name_node is not None:
+                # Update the LocationName attribute in the method XML
+                location_name_node.attrib['value'] = physical_name
+                
+    return method_tree
+
 def get_worktable_locations(workspace_name, side):
     workspace_worktable = ET.parse(f"{MM4_data_path}\\{workspace_name}\\Configuration\\Lynx.{side}.Worktable.config")
     ws = workspace_worktable.getroot()
@@ -183,6 +224,9 @@ def deploy_to_workspace(workspace_name):
     sides = get_workspace_sides(workspace_name)
     method_tree = set_worktable_sides(sides, method_tree)
     method_tree = remove_incompatible_commands(workspace_name, method_tree)
+    
+    method_tree = map_method_locations(method_tree, workspace_name)
+    
     method_tree = set_worktable_capacity(workspace_name, method_tree)
     
     workspace_path = os.path.abspath(f"{MM4_data_path}\\{workspace_name}")
@@ -190,7 +234,6 @@ def deploy_to_workspace(workspace_name):
     method_tree.write(method_path)
     
     add_method_variables(workspace_name)
-
 
 
 
